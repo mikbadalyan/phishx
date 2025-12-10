@@ -1,0 +1,20 @@
+From: noreply@bankofamerica.com
+To: user@example.com
+Subject: URGENT: Verify Your Account Immediately
+Date: Sat, 30 Nov 2025 10:30:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear Valued Customer,
+
+We have detected suspicious activity on your Bank of America account. To prevent your account from being suspended, you must verify your information immediately.
+
+Please click on the link below to verify your account:
+https://bit.ly/suspicious-link
+
+Failure to verify your account within 24 hours will result in permanent suspension of your account.
+
+Thank you for your immediate attention to this matter.
+
+Sincerely,
+Bank of America Security Team

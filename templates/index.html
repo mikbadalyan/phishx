@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Advanced Phishing Email Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">PG</div>
+                <div class="logo-text">Phish<span>Guard</span></div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Pricing</a>
+            </nav>
+            
+            <div class="auth-buttons">
+                <a href="{{ url_for('login') }}" class="btn btn-outline">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Protect Your Business from <span>Phishing Attacks</span></h1>
+                <p>Advanced AI-powered email security platform that detects and prevents phishing attempts in real-time with 99.2% accuracy.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary">
+                        <i class="fas fa-shield-alt"></i> Get Started Free
+                    </a>
+                    <a href="#features" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='phish.png') }}" alt="PhishGuard Dashboard" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Security Features</h2>
+            <p class="section-subtitle">Our platform combines cutting-edge technology with expert knowledge to provide unparalleled protection against phishing threats.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Detection</h3>
+                    <p>Machine learning algorithms analyze email content, headers, and metadata to identify sophisticated phishing attempts that bypass traditional filters.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Analysis</h3>
+                    <p>Instant risk assessment with detailed breakdown of suspicious elements, allowing immediate action to prevent data breaches.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>User Education</h3>
+                    <p>Interactive training modules and simulated phishing exercises to build cybersecurity awareness across your organization.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Comprehensive dashboards and reports to track phishing trends, measure security effectiveness, and demonstrate compliance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Multi-Layer Protection</h3>
+                    <p>Combines NLP, computer vision, and behavioral analysis to detect even the most sophisticated social engineering attacks.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Continuous Updates</h3>
+                    <p>Our threat intelligence engine constantly learns from new attack patterns to stay ahead of evolving phishing techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">99.2%</div>
+                    <div class="stat-label">Detection Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Emails Analyzed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500K+</div>
+                    <div class="stat-label">Phishing Blocked</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Protection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How PhishGuard Works</h2>
+            <p class="section-subtitle">Our simple 3-step process provides enterprise-grade phishing protection for businesses of all sizes.</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Upload Email</h3>
+                    <p>Submit suspicious emails through our web interface, email integration, or browser extension.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our advanced algorithms analyze content, headers, links, and attachments for phishing indicators.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Results</h3>
+                    <p>Receive instant risk assessment with detailed explanations and recommended actions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Business?</h2>
+                <p>Join thousands of organizations using PhishGuard to eliminate phishing threats and educate their employees.</p>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Start Free Trial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">PG</div>
+                        <div class="footer-logo-text">PhishGuard</div>
+                    </div>
+                    <p>Advanced phishing detection platform protecting businesses from email-based cyber threats through AI-powered analysis and user education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Product</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#features">Features</a></li>
+                        <li class="footer-link"><a href="#features">Pricing</a></li>
+                        <li class="footer-link"><a href="#">Integrations</a></li>
+                        <li class="footer-link"><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Documentation</a></li>
+                        <li class="footer-link"><a href="#">Blog</a></li>
+                        <li class="footer-link"><a href="#">Guides</a></li>
+                        <li class="footer-link"><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@phishguard.com</li>
+                        <li><i class="fas fa-phone"></i> +374 10 999777</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paruyr Sevak 1, Yerevan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PhishGuard. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
