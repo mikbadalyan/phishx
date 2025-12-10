@@ -183,7 +183,7 @@ phishing_platform/
 
 ## Team Members
 
-- **Mikayel Badalyan** - ML/NLP model, risk scoring, data visualization
+- **Mikayel** - ML/NLP model, risk scoring, data visualization
 - **Albert** - Data visualization, ML model evaluation
 - **Karen** - Email header analysis, SPF/DKIM/DMARC checks
 - **Vahe** - Link analysis, phishing pattern recognition
