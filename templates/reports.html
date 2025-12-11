@@ -117,7 +117,7 @@
                         <select id="classification" class="form-control">
                             <option>All</option>
                             <option>Phishing</option>
-                            <option>Safe</option>
+                            <option>Legitimate</option>
                         </select>
                     </div>
                     
@@ -125,9 +125,9 @@
                         <label for="risk-level">Risk Level</label>
                         <select id="risk-level" class="form-control">
                             <option>All</option>
-                            <option>High (&gt; 0.7)</option>
-                            <option>Medium (0.4 - 0.7)</option>
-                            <option>Low (&lt; 0.4)</option>
+                            <option>High (&gt; 70%)</option>
+                            <option>Medium (40% - 70%)</option>
+                            <option>Low (&lt; 40%)</option>
                         </select>
                     </div>
                     
@@ -178,9 +178,9 @@
                     </div>
                     <div class="stat-card-value">
                         {% if analyses %}
-                            {{ "{:.2f}".format(analyses|sum(attribute='risk_score') / analyses|length) }}
+                            {{ "{:.2f}%".format(analyses|sum(attribute='risk_score') / analyses|length) }}
                         {% else %}
-                            0.00
+                            0.00%
                         {% endif %}
                     </div>
                     <div class="stat-card-trend trend-down">
@@ -261,14 +261,14 @@
                                         <td>{{ analysis.filename }}</td>
                                         <td>
                                             <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                                {% if analysis.risk_score > 0.7 %}
+                                                {% if analysis.risk_score > 70 %}
                                                     <div style="width: 40px; height: 4px; background: #ef4444; border-radius: 2px;"></div>
-                                                {% elif analysis.risk_score > 0.4 %}
+                                                {% elif analysis.risk_score > 40 %}
                                                     <div style="width: 40px; height: 4px; background: #f59e0b; border-radius: 2px;"></div>
                                                 {% else %}
                                                     <div style="width: 40px; height: 4px; background: #10b981; border-radius: 2px;"></div>
                                                 {% endif %}
-                                                {{ analysis.risk_score }}
+                                                {{ analysis.risk_score }}%
                                             </div>
                                         </td>
                                         <td>
@@ -278,13 +278,13 @@
                                         </td>
                                         <td>
                                             <div style="display: flex; gap: 0.25rem; flex-wrap: wrap;">
-                                                {% if analysis.risk_score > 0.7 %}
+                                                {% if analysis.risk_score > 70 %}
                                                     <span class="badge badge-danger" style="font-size: 0.7rem;">High Risk</span>
                                                 {% endif %}
-                                                {% if analysis.risk_score > 0.5 %}
+                                                {% if analysis.risk_score > 55 %}
                                                     <span class="badge badge-warning" style="font-size: 0.7rem;">Urgent Language</span>
                                                 {% endif %}
-                                                {% if analysis.risk_score > 0.3 %}
+                                                {% if analysis.risk_score > 35 %}
                                                     <span class="badge badge-accent" style="font-size: 0.7rem;">Suspicious Links</span>
                                                 {% endif %}
                                             </div>
@@ -326,7 +326,12 @@
                 if (classification !== 'All') {
                     const classificationCell = row.cells[3]; // Classification column
                     const classificationText = classificationCell.textContent.trim();
-                    if (classificationText !== classification) {
+                    const normalized = classificationText === 'Safe' ? 'Legitimate' : classificationText;
+                    if (classification === 'Legitimate') {
+                        if (normalized !== 'Legitimate') {
+                            showRow = false;
+                        }
+                    } else if (classificationText !== classification) {
                         showRow = false;
                     }
                 }
@@ -337,11 +342,11 @@
                     const riskScoreText = riskScoreCell.textContent.trim();
                     const riskScore = parseFloat(riskScoreText);
                     
-                    if (riskLevel === 'High (> 0.7)' && riskScore <= 0.7) {
+                    if (riskLevel === 'High (> 70%)' && riskScore <= 70) {
                         showRow = false;
-                    } else if (riskLevel === 'Medium (0.4 - 0.7)' && (riskScore < 0.4 || riskScore > 0.7)) {
+                    } else if (riskLevel === 'Medium (40% - 70%)' && (riskScore < 40 || riskScore > 70)) {
                         showRow = false;
-                    } else if (riskLevel === 'Low (< 0.4)' && riskScore >= 0.4) {
+                    } else if (riskLevel === 'Low (< 40%)' && riskScore >= 40) {
                         showRow = false;
                     }
                 }

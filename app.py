@@ -16,6 +16,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib import colors
 
+from modules.phishing_engine import EmailRiskAnalyzer
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here-change-in-production'
 
@@ -37,6 +39,8 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
+
+analyzer = EmailRiskAnalyzer()
 
 # User loader for Flask-Login
 @login_manager.user_loader
@@ -99,55 +103,21 @@ def read_uploaded_file(filepath):
         print(f"Error reading file: {e}")
         return ""
 
-# Enhanced feature extraction functions
-def tokenize_email(email_content):
-    """Tokenize email content for NLP processing"""
-    # Simple tokenization - in a real app, you'd use spaCy or similar
-    tokens = re.findall(r'\b\w+\b', email_content.lower())
-    return tokens
-
-def extract_advanced_features(email_content):
-    """Extract advanced features from email content for ML model"""
-    features = {
-        'word_count': len(email_content.split()),
-        'exclamation_count': email_content.count('!'),
-        'question_count': email_content.count('?'),
-        'urgent_keywords': email_content.lower().count('urgent') + email_content.lower().count('immediate') + 
-                          email_content.lower().count('asap') + email_content.lower().count('act now'),
-        'suspicious_phrases': email_content.lower().count('click here') + email_content.lower().count('verify account') +
-                             email_content.lower().count('update information') + email_content.lower().count('limited time'),
-        'financial_terms': email_content.lower().count('bank') + email_content.lower().count('account') + 
-                          email_content.lower().count('credit card') + email_content.lower().count('payment'),
-        'threat_indicators': email_content.lower().count('suspended') + email_content.lower().count('closed') + 
-                            email_content.lower().count('locked') + email_content.lower().count('deactivated'),
-        'html_tags': email_content.lower().count('<a') + email_content.lower().count('<img') + 
-                    email_content.lower().count('<form') + email_content.lower().count('<iframe'),
-        'shortened_urls': len(re.findall(r'(bit\.ly|tinyurl|goo\.gl)', email_content.lower())),
-        'uppercase_ratio': sum(1 for c in email_content if c.isupper()) / max(len(email_content), 1)
-    }
-    return features
-
-def predict_phishing(features):
-    """Predict if email is phishing based on extracted features"""
-    # More sophisticated risk calculation
-    risk_components = {
-        'urgency': min(0.3, features['urgent_keywords'] * 0.1),
-        'suspicion': min(0.3, features['suspicious_phrases'] * 0.1),
-        'threats': min(0.2, features['threat_indicators'] * 0.05),
-        'links': min(0.15, features['html_tags'] * 0.03),
-        'short_urls': min(0.15, features['shortened_urls'] * 0.05),
-        'caps': min(0.1, features['uppercase_ratio'] * 0.5),
-        'exclamation': min(0.1, features['exclamation_count'] * 0.02)
-    }
+def classify_email(email_content, filename=None):
+    """Run the phishing analyzer and return a normalized payload for persistence."""
+    analysis = analyzer.analyze(email_content, filename=filename)
+    classification = 'Phishing' if analysis['label'] == 'phishing' else 'Legitimate'
     
-    risk_score = sum(risk_components.values())
-    risk_score = min(0.99, risk_score)  # Cap at 0.99
-    
-    return {
-        'risk_score': risk_score,
-        'is_phishing': risk_score > 0.6,
-        'components': risk_components
+    result = {
+        'filename': filename or 'inline_submission',
+        'risk_score': analysis['risk_score'],
+        'risk_score_normalized': analysis['risk_score_normalized'],
+        'classification': classification,
+        'features': analysis['display_features'],
+        'indicators': analysis['indicators'],
+        'meta': analysis['meta']
     }
+    return result
 
 # Routes
 @app.route('/')
@@ -306,48 +276,89 @@ def upload_file():
         # Read the email content
         email_content = read_uploaded_file(filepath)
         
-        # Process with enhanced ML model
-        tokens = tokenize_email(email_content)
-        features = extract_advanced_features(email_content)
-        ml_prediction = predict_phishing(features)
+        # Analyze the email with the explainable engine
+        analysis_result = classify_email(email_content, filename=filename)
         
-        # Convert features to detailed list for display
-        detailed_features = [
-            {'name': 'Word Count', 'value': features['word_count']},
-            {'name': 'Exclamation Marks', 'value': features['exclamation_count']},
-            {'name': 'Urgent Keywords', 'value': features['urgent_keywords']},
-            {'name': 'Suspicious Phrases', 'value': features['suspicious_phrases']},
-            {'name': 'Financial Terms', 'value': features['financial_terms']},
-            {'name': 'Threat Indicators', 'value': features['threat_indicators']},
-            {'name': 'HTML Elements', 'value': features['html_tags']},
-            {'name': 'Shortened URLs', 'value': features['shortened_urls']},
-            {'name': 'Uppercase Ratio', 'value': f"{features['uppercase_ratio']:.2f}"}
-        ]
+        # Persist results, storing full explainability payload for later drill-down
+        stored_features = {
+            'display_features': analysis_result['features'],
+            'indicators': analysis_result['indicators'],
+            'meta': analysis_result['meta']
+        }
         
-        # Save analysis to database
         analysis = EmailAnalysis(
             filename=filename,
             filepath=filepath,
-            risk_score=round(ml_prediction['risk_score'], 4),
-            classification='Phishing' if ml_prediction['is_phishing'] else 'Safe',
+            risk_score=analysis_result['risk_score'],
+            classification=analysis_result['classification'],
             user_id=current_user.id,
-            features=json.dumps(detailed_features)
+            features=json.dumps(stored_features)
         )
         
         db.session.add(analysis)
         db.session.commit()
         
-        # Combine results
+        # Combine results for immediate UI/API consumption
         result = {
             'filename': filename,
-            'risk_score': round(ml_prediction['risk_score'], 4),
-            'classification': 'Phishing' if ml_prediction['is_phishing'] else 'Safe',
-            'features': detailed_features
+            'risk_score': analysis_result['risk_score'],
+            'risk_score_normalized': analysis_result['risk_score_normalized'],
+            'classification': analysis_result['classification'],
+            'features': analysis_result['features'],
+            'indicators': analysis_result['indicators'],
+            'meta': analysis_result['meta']
         }
         
         return jsonify(result)
     
     return jsonify({'error': 'Invalid file type'}), 400
+
+@app.route('/api/analyze', methods=['POST'])
+@login_required
+def api_analyze():
+    """
+    API endpoint for analyzing raw email content (EML or plain text).
+    Accepts JSON payload with `raw_email`/`text` or a file upload under `emailFile`.
+    """
+    raw_email = ''
+    filename = 'inline_submission'
+    persist = True
+    
+    if request.is_json:
+        payload = request.get_json(silent=True) or {}
+        raw_email = payload.get('raw_email') or payload.get('text') or payload.get('body', '')
+        filename = payload.get('filename', filename)
+        persist = payload.get('persist', True)
+    elif 'emailFile' in request.files:
+        file = request.files['emailFile']
+        filename = secure_filename(file.filename) if file.filename else filename
+        raw_email = file.read().decode('utf-8', errors='ignore')
+    
+    if not raw_email:
+        return jsonify({'error': 'No email content provided'}), 400
+    
+    analysis_result = classify_email(raw_email, filename=filename)
+    
+    # Optionally persist the analysis (default true for authenticated users)
+    if persist and current_user.is_authenticated:
+        stored_features = {
+            'display_features': analysis_result['features'],
+            'indicators': analysis_result['indicators'],
+            'meta': analysis_result['meta']
+        }
+        analysis = EmailAnalysis(
+            filename=filename or 'inline_submission',
+            filepath='api_submission',
+            risk_score=analysis_result['risk_score'],
+            classification=analysis_result['classification'],
+            user_id=current_user.id,
+            features=json.dumps(stored_features)
+        )
+        db.session.add(analysis)
+        db.session.commit()
+        analysis_result['analysis_id'] = analysis.id
+    
+    return jsonify(analysis_result), 200
 
 @app.route('/analysis/<int:analysis_id>')
 @login_required
@@ -359,10 +370,18 @@ def view_analysis(analysis_id):
         flash('Access denied: You do not have permission to view this analysis', 'error')
         return redirect(url_for('dashboard'))
     
-    # Parse features from JSON
-    features = json.loads(analysis.features) if analysis.features else []
+    # Parse features from JSON, supporting both legacy lists and new explainability payloads
+    raw_features = json.loads(analysis.features) if analysis.features else {}
+    indicators = []
+    meta = {}
+    if isinstance(raw_features, dict):
+        features = raw_features.get('display_features', [])
+        indicators = raw_features.get('indicators', [])
+        meta = raw_features.get('meta', {})
+    else:
+        features = raw_features
     
-    return render_template('analysis_detail.html', analysis=analysis, features=features)
+    return render_template('analysis_detail.html', analysis=analysis, features=features, indicators=indicators, meta=meta)
 
 @app.route('/delete_analysis/<int:analysis_id>', methods=['POST'])
 @login_required
@@ -412,7 +431,7 @@ def export_report(analysis_id):
     data = [
         ['Filename:', analysis.filename],
         ['Classification:', analysis.classification],
-        ['Risk Score:', str(analysis.risk_score)],
+        ['Risk Score:', f"{analysis.risk_score}%"],
         ['Analysis Date:', analysis.uploaded_at.strftime('%Y-%m-%d %H:%M:%S')],
     ]
     

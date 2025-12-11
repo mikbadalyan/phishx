@@ -1,0 +1,25 @@
+From: Microsoft <microsoft@email-records.com>
+To: me
+Subject: High-severity alert: Phish delivered due to tenant or user override
+Date: 4:22 PM
+
+Office 365
+
+A high-severity alert has been triggered
+
+Phish delivered due to tenant or user override
+
+Severity: High
+Time: 01/22/2021
+Activity: Protection
+Details: 1 message hit on 2aec-43aa-a943-08d7333455ace-1065783939474734-1, sent by Unknown to at time 01/22/2021 9:22 PM.
+
+View alert details
+
+Thank you,
+The Office 365 Team
+
+Microsoft
+One Microsoft Way
+Redmond, WA
+98052-6399 USA

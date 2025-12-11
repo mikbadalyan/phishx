@@ -136,14 +136,14 @@
                             
                             <!-- Inner circle -->
                             <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <div style="font-size: 2rem; font-weight: 700; color: var(--dark);">{{ analysis.risk_score }}</div>
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--dark);">{{ analysis.risk_score }}%</div>
                                 <div style="color: #64748b; font-size: 0.9rem;">Risk Score</div>
                             </div>
                         </div>
                         
                         <div style="margin-top: 1.5rem;">
                             <h4 style="margin-bottom: 1rem; color: var(--dark);">Risk Level</h4>
-                            {% if analysis.risk_score > 0.7 %}
+                            {% if analysis.risk_score > 70 %}
                                 <div style="padding: 1rem; background: #fee2e2; border-radius: 8px; border-left: 4px solid #ef4444;">
                                     <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                                         <i class="fas fa-exclamation-triangle" style="color: #ef4444;"></i>
@@ -151,7 +151,7 @@
                                     </div>
                                     <p style="color: #991b1b; margin: 0;">This email exhibits multiple phishing indicators and should be treated with extreme caution.</p>
                                 </div>
-                            {% elif analysis.risk_score > 0.4 %}
+                            {% elif analysis.risk_score > 40 %}
                                 <div style="padding: 1rem; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
                                     <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                                         <i class="fas fa-exclamation-circle" style="color: #f59e0b;"></i>

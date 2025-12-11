@@ -1,0 +1,1696 @@
+Received: from DBAP195MB0922.EURP195.PROD.OUTLOOK.COM (2603:10a6:10:1b4::14)
+ by DU0P195MB1523.EURP195.PROD.OUTLOOK.COM with HTTPS; Tue, 30 Sep 2025
+ 15:32:27 +0000
+Received: from AM8P195MB1059.EURP195.PROD.OUTLOOK.COM (2603:10a6:20b:1e7::18)
+ by DBAP195MB0922.EURP195.PROD.OUTLOOK.COM (2603:10a6:10:1b4::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9160.17; Tue, 30 Sep
+ 2025 15:32:25 +0000
+Received: from AM8P195MB1059.EURP195.PROD.OUTLOOK.COM
+ ([fe80::2930:fa01:5ba6:8fd0]) by AM8P195MB1059.EURP195.PROD.OUTLOOK.COM
+ ([fe80::2930:fa01:5ba6:8fd0%4]) with mapi id 15.20.9160.015; Tue, 30 Sep 2025
+ 15:32:25 +0000
+From: Kristina Sargsyan <kristina.sargsyan@pers.ufar.am>
+To: IMA4 <ima4@etud.ufar.am>
+CC: =?iso-8859-1?Q?Doyenne_de_la_Facult=E9_de_IMA_UFAR?= <respch_ima@ufar.am>,
+	Sofya Tadevosyan <Sofya.Tadevosyan@pers.ufar.am>, Aram Kostanyan
+	<Aram.Kostanyan@pers.ufar.am>, Aram Yesayan <aram.yesayan@pers.ufar.am>,
+	Eliza Gyulgyulyan <Eliza.Gyulgyulyan@pers.ufar.am>, Gagik Ayvazyan
+	<gagik.ayvazyan@pers.ufar.am>, Gohar Zaprosyan
+	<Gohar.Zaprosyan@pers.ufar.am>, Hasmik Sahakyan
+	<Hasmik.Sahakyan@pers.ufar.am>, Hrachya Astsatryan
+	<Hrachya.Astsatryan@pers.ufar.am>, Irina Poghosyan UFAR
+	<Administrator@ufar.am>, Karen Petrosyan <Karen.Petrosyan@pers.ufar.am>,
+	Mamikon Mirzoyan <Mamikon.Mirzoyan@pers.ufar.am>, Mariam Harutyunyan
+	<Mariam.Harutyunyan@pers.ufar.am>, Robert Tadevosyan
+	<Robert.Tadevosyan@pers.ufar.am>, Varazdat Avetisyan
+	<Varazdat.Avetisyan@pers.ufar.am>, Yeghisabet Alaverdyan
+	<Yeghisabet.Alaverdyan@pers.ufar.am>
+Subject: Mandatory Requirements and Guidelines for Project S5
+Thread-Topic: Mandatory Requirements and Guidelines for Project S5
+Thread-Index: AQHcMh9sUw4ILtFthU+0rYjBFUasEg==
+Importance: high
+X-Priority: 1
+Date: Tue, 30 Sep 2025 15:32:25 +0000
+Message-ID:
+	<AM8P195MB10593150165DD4EF4121AEF8DF1AA@AM8P195MB1059.EURP195.PROD.OUTLOOK.COM>
+References:
+	<AM8P195MB1059E689CAC6F9ABA4186321DF1AA@AM8P195MB1059.EURP195.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<AM8P195MB1059E689CAC6F9ABA4186321DF1AA@AM8P195MB1059.EURP195.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: AM8P195MB1059.EURP195.PROD.OUTLOOK.COM
+X-MS-Has-Attach: yes
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id:
+	6b076062-6585-4e04-2d35-08de00368eb7
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	LocsLE0uO0xfXV9VTuwmOxu9aDgAD/+omt4qCAOkT22KnLfsfVLvTYMWQ1MCJR8xCrHEIpMDYIWI4/1wjsRjTR2Oz/6B5c11igVlUMQ4rCo48UqY/JldvnbOOv7UvmRhCfQqJpwmHOxz+hF7OvOVCq/60T8k0aUtyGkHZIKqaZ3tTnj6ErXP0CURXCFsUMRgyfxHrUzfNQs6wLu1r48RBISTo+ER+9FSfX64sQSWpbSzF38qPD4MJtIGpAyj05gh5doael1sP+VfanVpNJg1EdpthesI2sVVCMSmlqM6xOIHVtdCtpVFYB8yeVq3awjf7u1h0CGSY6rA0Z3eWaF6W3+IRRQsraqWx7HZ8k7LW9R3NTUKuHE3WVzr154H7Abvs75JA0BIGUraBnzBl5fYhiBtzt8RGNdIntT2Gm+/fEGUquiV/8ITlohjoPeQEHQqaLabKQKmw1tLxVKqnRVNwi+R8IwhQqSSFKAGalrE+Ul1y15yeKDwvuZ+ajg3dSj2k6KUbE5Hd4v971N5FNVz7ilkKZY7vIVXdsK0hbBRxSRhNGTrJ51niJHPAno9pABvXd19U5xZsI6/16UTYZr4ihskSebVfCY0UoutvJcjdhrgzjCnDtViNiKayDMUjwqORISPH2AYU3bBNTcVgMGnVX/tR64xzN+0mRHR2mTo1vlzJRfj/NF+pA+WnK+iUsrF7NxTuQQaCGc22oIO10UO6ORCpyd/yULp7+JyHfxOWzaiKjg6Wc3OHGxyr9rLpuxjvzsHbxNYCxthfilQS8iyZB1crnFTOnCQE0QvwCOrO5g=
+Content-Type: multipart/related;
+	boundary="_004_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_004_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_
+Content-Type: multipart/alternative;
+	boundary="_000_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_"
+
+--_000_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Students,
+This email formally outlines the complete requirements and guidelines for P=
+roject S5. This project is a capstone experience designed to integrate your=
+ academic learning with practical, industry-relevant application, requiring=
+ both technical execution and professional dissemination.
+Please review all sections carefully, as adherence to these structured requ=
+irements is mandatory.
+1. Project Scope and Focus
+All projects must directly address an ongoing problem in industry or societ=
+y (e.g., healthcare, education, business process optimization, environmenta=
+l sustainability).
+
+  *   Synopsys Projects: Must be clearly defined sub-tasks or pilot project=
+s derived from Synopsys's actual needs (e.g., in EDA tools, verification, o=
+r internal systems).
+  *   Own Projects: Must be based on a clear, validated problem statement w=
+ith a potential path to real-world application or adoption.
+  *   Deliverable: A demonstrable software-centric system, software, or ana=
+lytical solution. Hardware/microelectronics involvement is permissible but =
+secondary (e.g., embedded systems).
+
+Please begin your project planning immediately, focusing on a clear problem=
+ statement and a robust design that integrates a minimum of four course com=
+petencies. If you have any questions regarding the scope or requirements, p=
+lease consult with your course instructors.
+The mentor for the Synopsys Armenia track is Vasgen Melikyan.
+Students outside this track are required to contact a professor listed in t=
+he CC field, finalize their topic with the prospective mentor's validation,=
+ and complete the project form by October 6th.
+https://forms.office.com/e/4uRp1jXYaL
+Important: For team projects, which have a maximum limit of four students, =
+each member is required to submit the form individually (separately), prese=
+nt their unique part of the investigation, and be assigned a mentor, who ca=
+n be the same person for all or different across the team.
+2. Integration of Concurrent Course Competencies
+The project must demonstrably leverage concepts from at least four of the c=
+oncurrent courses.
+Course
+Potential Project Integration Example
+Systems Programming
+Low-level optimization, memory management, IPC, shell scripting for automat=
+ion.
+Parallel Programming
+Multi-threading, multi-processing, GPU computing (OpenMP), synchronization =
+techniques.
+Functional Programming & Introduction to ADT
+Use of immutable data structures, higher-order functions, or advanced ADT d=
+esign.
+Probability & Statistics
+Data modeling, statistical testing, use of R or Python's Pandas/SciPy for a=
+nalysis.
+Graph Theory
+Implementation of graph algorithms (shortest path, MST, flow networks) to m=
+odel project data/systems.
+Theory of Automata and Formal Languages
+Use of regular expressions, design of a simple parser/lexer for a DSL or co=
+nfiguration.
+Computer Networks 3
+Network protocol implementation, socket programming, distributed system arc=
+hitecture, secure communication.
+Object-Oriented Programming 2 (Java)
+Adherence to SOLID principles, use of advanced Java features, robust class =
+hierarchy.
+Software Engineering
+Application of a development methodology (Agile/Scrum), version control (Gi=
+t), rigorous testing, requirements analysis, documentation.
+Artificial Intelligence
+Implementing ML models, search algorithms (A*, minimax), or NLP.
+
+Crucially, the final report and presentation must explicitly map the projec=
+t components to the respective course concepts.
+
+3. External Engagement (Choose One)
+The project must include an external validation or competitive element. You=
+ must participate in one of the following:
+
+  *   International Competition or Hackathon: Participation in a relevant p=
+rogramming, microelectronic, or domain-specific competition (e.g., Kaggle, =
+IEEE, ACM ICPC style, tech company hackathons).
+     *   Evidence: Registration proof, submission details, participation ce=
+rtificate/results.
+  *   Start-up Product Presentation: Develop a business case and present th=
+e product at a recognized local or international start-up event or pitch co=
+mpetition.
+     *   Evidence: Pitch deck, event details, photos/video of presentation.
+
+4. Professional Dissemination (Choose One)
+You must formally present and document your project findings to a professio=
+nal audience by choosing one of the following:
+
+  *   Poster Presentation: Design and present a professional Poster summari=
+zing the problem, methodology, and results at a professional conference or =
+university-level research day (online or offline).
+  *   Article Summation and Presentation: Write a short Article Summation (=
+e.g., 2-4 pages, conference paper format) and present the work (oral presen=
+tation) at a professional conference or seminar (online or offline).
+     *   Evidence: Conference program, abstract submission, presentation sl=
+ides/video.
+
+5. Required Deliverables
+All deliverables must be completed and submitted by the final deadline:
+
+  1.  Written Report (Formal Technical Document):
+     *   Structure: Must include Problem Statement, Requirements, Design (A=
+rchitecture, UML, Data Model), Implementation Details (Algorithms, Key Code=
+ Snippets), Results, Testing/Evaluation, Integration of Competences Mapping=
+ (Required Section), Conclusion, and Future Work.
+     *   Appendices: A detailed mapping grid showing which course competenc=
+ies were used and how is required.
+  2.  Git/GitHub Repository: A complete, well-structured, and consistently =
+committed source code repository with clear documentation (README.md), inst=
+allation instructions, and a visible project history.
+  3.  External Engagements Presentation (Proof of Participation): Compiled =
+evidence (links, certificates, photos, videos) of the chosen External Engag=
+ement and Professional Dissemination activities.
+  4.  Oral Presentation and Demonstration (Final Defense): A 15-20 minute p=
+resentation and live demonstration of the functional system/solution to the=
+ project committee, followed by a Q&A session.
+
+Grading Criteria
+The quality of consideration (clever approach, interconnection of the appro=
+ach, correct structure of the content, critical thinking, interest and flex=
+ibility of mind).
+This criterion focuses on the intellectual rigor and structural quality of =
+the work and defense.
+Corresponding Detailed Component
+Max Points
+Focus Area
+Breadth and Depth of Integration
+2
+Non-trivial and meaningful application of concepts (Interconnection of appr=
+oach/Critical thinking).
+Technical Report (Analysis and Structure)
+0.5
+Logical structure, depth of analysis (Correct structure of content).
+Subtotal
+2.5
+The quality of the technical solution suggested in the internship project (=
+link with reality, mastering of applied methods, quality of suggested solut=
+ions, professional sense of reality and freedom of thought).
+This criterion addresses the practical, functional, and professional qualit=
+y of the project's technical output.
+Corresponding Detailed Component
+Max Points
+Focus Area
+Implementation & Code Quality
+3
+Fully functional, well-tested, optimized system. Professional-grade code (M=
+astering of applied methods, quality of solutions).
+Problem Analysis & Solution Design
+2
+Novel and robust solution architecture (Clever approach). Appropriate techn=
+ology stack choice (Mastering of applied methods).
+External Engagement
+2
+Successful participation in a high-level competition/hackathon or well-prep=
+ared start-up presentation (Professional sense of reality/link with reality=
+).
+Breadth and Depth of Integration
+2
+Successful application of concepts (Mastering of applied methods).
+Git/GitHub
+1
+Consistent commit history, professional branch management (Professional sen=
+se of reality).
+Subtotal
+10
+
+The quality of writing (structure of the content, following the assigned nu=
+mber of pages, legibility, spelling, correct register, precision and clarit=
+y of the text).
+This criterion is primarily covered by the written documentation components=
+.
+Corresponding Detailed Component
+Max Points
+Focus Area
+Technical Report
+1
+Clear, logical, professional technical writing. Adherence to structure, cor=
+rect referencing (All aspects of writing quality).
+Git/GitHub
+1
+Excellent README.md and clear folder structure (Clarity of text/structure o=
+utside the report).
+Professional Dissemination (Article/Poster summation)
+2
+High-quality poster or article summation (Precision and clarity of text).
+Subtotal
+4
+
+The quality of oral presentation (fluent speech, reasonableness and ingenui=
+ty, content of presentation...).
+This criterion is covered by the dedicated presentation and defense compone=
+nts.
+Corresponding Detailed Component
+Max Points
+Focus Area
+Presentation Delivery
+0.5
+Clear, engaging, well-timed presentation. Effective demonstration (Fluent s=
+peech, content of presentation).
+Professional Dissemination (Presentation at a professional forum)
+1
+Clear, well-articulated presentation (Fluent speech).
+Q&A and Understanding (Delivery)
+2
+Accurate and confident answers to technical and conceptual questions (Criti=
+cal thinking, flexibility). Confident answers (Reasonableness and ingenuity=
+).
+Subtotal
+3,5
+
+
+Key Grading Notes:
+Individual Workload: The report must clearly delineate the individual contr=
+ibution of the student, confirming approximately 50 hours of effort.
+Ethical Considerations: All projects must strictly adhere to ethical standa=
+rds, particularly those involving data or security.
+
+Sincerely,
+
+
+
+
+
+Kristina SARGSYAN
+
+
+
+Doyenne de la facult=E9 d'Informatique et de math=E9matiques appliqu=E9es
+
+[cid:8069bd6e-5e19-49e0-9f6b-90ad0cdd845f]
+
+________________________________
+
+
+
+
+--_000_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Dear Students,</div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+This email formally outlines the complete requirements and guidelines for <=
+b>Project S5</b>. This project is a capstone experience designed to integra=
+te your academic learning with practical, industry-relevant application, re=
+quiring both technical execution
+ and professional dissemination.</div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Please review all sections carefully, as adherence to these structured requ=
+irements is mandatory.</div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>1. Project Scope and Focus</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+All projects must directly address an <b>ongoing problem in industry or soc=
+iety</b>&nbsp;(e.g., healthcare, education, business process optimization, =
+environmental sustainability).</div>
+<ul style=3D"text-align: left; margin-top: 0cm; margin-right: 0cm; padding-=
+left: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Synopsys Projects:</b>&nbsp;Must be clearly defined sub-tasks or pilot p=
+rojects derived from Synopsys's actual needs (e.g., in EDA tools, verificat=
+ion, or internal systems).</li><li style=3D"font-family: &quot;Times New Ro=
+man&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81)=
+; align-self: start; line-height: normal; margin: 0cm 0cm 10pt;">
+<b>Own Projects:</b>&nbsp;Must be based on a clear, validated problem state=
+ment with a potential path to real-world application or adoption.</li><li s=
+tyle=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, serif;=
+ font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-height: no=
+rmal; margin: 0cm 0cm 10pt;">
+<b>Deliverable:</b>&nbsp;A demonstrable <b>software-centric</b> system, sof=
+tware, or analytical solution. Hardware/microelectronics involvement is per=
+missible but secondary (e.g., embedded systems).</li></ul>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+Please begin your project planning immediately, focusing on a clear problem=
+ statement and a robust design that integrates a minimum of four course com=
+petencies. If you&nbsp;have any questions regarding the scope or requiremen=
+ts, please consult with your course instructors.</div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+The mentor for the <b>Synopsys Armenia track is Vasgen Melikyan</b>.</div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(200, 38, 19);">
+Students outside this track are required to contact a professor listed in t=
+he CC field, finalize their topic with the prospective mentor's validation,=
+ and
+<b>complete the project form by October 6th.</b></div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt;">
+<span style=3D"color: blue;"><u><a style=3D"color: blue;" class=3D"OWAAutoL=
+ink" id=3D"OWA299bc46c-8589-d937-4cae-1e20c8c6101c" href=3D"https://forms.o=
+ffice.com/e/4uRp1jXYaL">https://forms.office.com/e/4uRp1jXYaL</a></u></span=
+><span style=3D"color: rgb(0, 36, 81);">
+</span></div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(200, 38, 19);">
+<b>Important:</b> For team projects, which have a maximum limit of <b>four =
+students</b>, each member is required to
+<b>submit the form individually (separately),</b>&nbsp;present their unique=
+ part of the investigation, and be assigned a mentor, who can be the same p=
+erson for all or different across the team.</div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>2. Integration of Concurrent Course Competencies</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+The project must demonstrably leverage concepts from <b>at least four of th=
+e concurrent courses</b>.</div>
+<table style=3D"border-color: currentcolor; border-style: solid; border-wid=
+th: 1pt; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0px;" cellspacing=3D"3" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Course</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Potential Project Integration Example</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Systems Programming</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Low-level optimization, memory management, IPC, shell scripting for automat=
+ion.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Parallel Programming</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Multi-threading, multi-processing, GPU computing (OpenMP), synchronization =
+techniques.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Functional Programming &amp; Introduction to ADT</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Use of immutable data structures, higher-order functions, or advanced ADT d=
+esign.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Probability &amp; Statistics</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Data modeling, statistical testing, use of R or Python's Pandas/SciPy for a=
+nalysis.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Graph Theory</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Implementation of graph algorithms (shortest path, MST, flow networks) to m=
+odel project data/systems.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Theory of Automata and Formal Languages</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Use of regular expressions, design of a simple parser/lexer for a DSL or co=
+nfiguration.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Computer Networks 3</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Network protocol implementation, socket programming, distributed system arc=
+hitecture, secure communication.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Object-Oriented Programming 2 (Java)</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Adherence to SOLID principles, use of advanced Java features, robust class =
+hierarchy.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Software Engineering</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Application of a development methodology (Agile/Scrum), version control (Gi=
+t), rigorous testing, requirements analysis, documentation.</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Artificial Intelligence</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &quo=
+t;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Implementing ML models, search algorithms (A*, minimax), or NLP.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><br>
+</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Crucially, the final report and presentation must explicitly map the pro=
+ject components to the respective course concepts.</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><br>
+</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>3. External Engagement (Choose One)</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+The project must include an external validation or competitive element. You=
+ must participate in
+<b>one</b>&nbsp;of the following:</div>
+<ul style=3D"text-align: left; margin-top: 0cm; margin-right: 0cm; padding-=
+left: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>International Competition or Hackathon:</b> Participation in a relevant =
+programming, microelectronic, or domain-specific competition (e.g., Kaggle,=
+ IEEE, ACM ICPC style, tech company hackathons).</li><ul style=3D"text-alig=
+n: left; margin-top: 0cm; margin-right: 0cm; padding-left: 0px; flex-direct=
+ion: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<i>Evidence:</i>&nbsp;Registration proof, submission details, participation=
+ certificate/results.</li></ul>
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Start-up Product Presentation:</b>&nbsp;Develop a business case and pres=
+ent the product at a recognized local or international start-up event or pi=
+tch competition.</li><ul style=3D"text-align: left; margin-top: 0cm; margin=
+-right: 0cm; padding-left: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<i>Evidence:</i>&nbsp;Pitch deck, event details, photos/video of presentati=
+on.</li></ul>
+</ul>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>4. Professional Dissemination (Choose One)</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+You must formally present and document your project findings to a professio=
+nal audience by choosing
+<b>one</b>&nbsp;of the following:</div>
+<ul style=3D"text-align: left; margin-top: 0cm; margin-right: 0cm; padding-=
+left: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Poster Presentation:</b>&nbsp;Design and present a professional Poster s=
+ummarizing the problem, methodology, and results at a professional conferen=
+ce or university-level research day (online or offline).</li><li style=3D"f=
+ont-family: &quot;Times New Roman&quot;, &quot;Times&quot;, serif; font-siz=
+e: 11pt; color: rgb(0, 36, 81); align-self: start; line-height: normal; mar=
+gin: 0cm 0cm 10pt;">
+<b>Article Summation and Presentation:</b> Write a short <b>Article Summati=
+on</b>&nbsp;(e.g., 2-4 pages, conference paper format) and present the work=
+ (oral presentation) at a professional conference or seminar (online or off=
+line).</li><ul style=3D"text-align: left; margin-top: 0cm; margin-right: 0c=
+m; padding-left: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<i>Evidence:</i>&nbsp;Conference program, abstract submission, presentation=
+ slides/video.</li></ul>
+</ul>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>5. Required Deliverables</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+All deliverables must be completed and submitted by the final deadline:</di=
+v>
+<ol data-editing-info=3D"{&quot;orderedStyleType&quot;:1}" style=3D"text-al=
+ign: left; margin-top: 0cm; margin-right: 0cm; padding-left: 0px; list-styl=
+e-type: decimal; flex-direction: column; display: flex;" start=3D"1">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Written Report (Formal Technical Document):</b></li><ul style=3D"text-al=
+ign: left; margin-top: 0cm; margin-right: 0cm; padding-left: 0px; flex-dire=
+ction: column; display: flex;">
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Structure:</b>&nbsp;Must include Problem Statement, Requirements, Design=
+ (Architecture, UML, Data Model), Implementation Details (Algorithms, Key C=
+ode Snippets), Results, Testing/Evaluation,
+<b>Integration of Competences Mapping (Required Section)</b>, Conclusion, a=
+nd Future Work.</li><li style=3D"font-family: &quot;Times New Roman&quot;, =
+&quot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81); align-sel=
+f: start; line-height: normal; margin: 0cm 0cm 10pt;">
+<b>Appendices:</b>&nbsp;A detailed mapping grid showing which course compet=
+encies were used and how is
+<b>required</b>.</li></ul>
+<li style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, s=
+erif; font-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-heigh=
+t: normal; margin: 0cm 0cm 10pt;">
+<b>Git/GitHub Repository:</b>&nbsp;A complete, well-structured, and consist=
+ently committed source code repository with clear documentation (README.md)=
+, installation instructions, and a visible project history.</li><li style=
+=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, serif; fon=
+t-size: 11pt; color: rgb(0, 36, 81); align-self: start; line-height: normal=
+; margin: 0cm 0cm 10pt;">
+<b>External Engagements Presentation (Proof of Participation):</b>&nbsp;Com=
+piled evidence (links, certificates, photos, videos) of the chosen External=
+ Engagement and Professional Dissemination activities.</li><li style=3D"fon=
+t-family: &quot;Times New Roman&quot;, &quot;Times&quot;, serif; font-size:=
+ 11pt; color: rgb(0, 36, 81); align-self: start; line-height: normal; margi=
+n: 0cm 0cm 10pt;">
+<b>Oral Presentation and Demonstration (Final Defense):</b>&nbsp;A 15-20 mi=
+nute presentation and live demonstration of the functional system/solution =
+to the project committee, followed by a Q&amp;A session.</li></ol>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Grading Criteria</b></div>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 10pt 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>The quality of consideration (clever approach, interconnection of the=
+ approach, correct structure of the content, critical thinking, interest an=
+d flexibility of mind).</i></b></div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+This criterion focuses on the intellectual rigor and structural quality of =
+the work and defense.</div>
+<table style=3D"border-color: currentcolor; border-style: solid; border-wid=
+th: 1pt; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0px;" cellspacing=3D"3" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Corresponding Detailed Component</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Max Points</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Focus Area</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Breadth and Depth of Integration</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+2</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Non-trivial</b>&nbsp;and <b>meaningful application</b>&nbsp;of concepts =
+(Interconnection of approach/Critical thinking).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Technical Report</b>&nbsp;(Analysis and Structure)</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+0.5</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Logical</b>&nbsp;structure, depth of <b>analysis</b>&nbsp;(Correct struc=
+ture of content).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Subtotal</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>2.5</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 10pt 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>The quality of the technical solution suggested in the internship pro=
+ject (link with reality, mastering of applied methods, quality of suggested=
+ solutions, professional sense of reality and freedom of thought).</i></b><=
+/div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+This criterion addresses the practical, functional, and professional qualit=
+y of the project's technical output.</div>
+<table style=3D"border-color: currentcolor; border-style: solid; border-wid=
+th: 1pt; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0px;" cellspacing=3D"3" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Corresponding Detailed Component</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Max Points</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Focus Area</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Implementation &amp; Code Quality</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+3</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Fully functional</b>, well-tested, <b>optimized system</b>. <b>Professio=
+nal-grade code</b>&nbsp;(Mastering of applied methods, quality of solutions=
+).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Problem Analysis &amp; Solution Design</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+2</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Novel</b>&nbsp;and <b>robust solution architecture</b>&nbsp;(Clever appr=
+oach). <b>Appropriate technology stack choice</b>&nbsp;(Mastering of applie=
+d methods).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt; height: 46.9pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>External Engagement</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt; height: 46.9pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+2</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt; height: 46.9pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Successful participation in a <b>high-level competition/hackathon</b>&nbsp;=
+or <b>well-prepared start-up presentation</b> (Professional sense of realit=
+y/link with reality).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Breadth and Depth of Integration</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+2</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Successful</b>&nbsp;application of concepts (Mastering of applied method=
+s).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Git/GitHub</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+1</div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+Consistent commit history, professional branch management (Professional sen=
+se of reality).</div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>Subtotal</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b>10</b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+&nbsp;</div>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 10pt 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>The quality of writing (structure of the content, following the assig=
+ned number of pages, legibility, spelling, correct register, precision and =
+clarity of the text).</i></b></div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+<b><i>This criterion is primarily covered by the written documentation comp=
+onents.</i></b></div>
+<table style=3D"border-color: currentcolor; border-style: solid; border-wid=
+th: 1pt; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0px;" cellspacing=3D"3" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Corresponding Detailed Component</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Max Points</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Focus Area</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Technical Report</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>1</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Clear, logical, professional technical writing. Adherence to structur=
+e, correct referencing&nbsp;(All aspects of writing quality).</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Git/GitHub</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>1</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Excellent README.md&nbsp;and clear folder structure&nbsp;(Clarity of =
+text/structure outside the report).</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Professional Dissemination&nbsp;(Article/Poster summation)</i></b></d=
+iv>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>2</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>High-quality poster or article summation&nbsp;(Precision and clarity =
+of text).</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Subtotal</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>4</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>&nbsp;</i></b></div>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 10pt 0cm 0.0001pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>The quality of oral presentation (fluent speech, reasonableness and i=
+ngenuity, content of presentation...).</i></b></div>
+<div class=3D"elementToProof" style=3D"margin: 1em 0cm; font-family: &quot;=
+Times New Roman&quot;, &quot;Times&quot;, serif; font-size: 11pt; color: rg=
+b(0, 36, 81);">
+<b><i>This criterion is covered by the dedicated presentation and defense c=
+omponents.</i></b></div>
+<table style=3D"border-color: currentcolor; border-style: solid; border-wid=
+th: 1pt; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0px;" cellspacing=3D"3" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Corresponding Detailed Component</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Max Points</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Focus Area</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Presentation Delivery</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>0.5</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Clear, engaging, well-timed presentation. Effective demonstration&nbs=
+p;(Fluent speech, content of presentation).</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Professional Dissemination&nbsp;(Presentation at a professional forum=
+)</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>1</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Clear, well-articulated presentation&nbsp;(Fluent speech).</i></b></d=
+iv>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Q&amp;A and Understanding&nbsp;(Delivery)</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>2</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Accurate and confident answers&nbsp;to technical and conceptual quest=
+ions (Critical thinking, flexibility). Confident answers&nbsp;(Reasonablene=
+ss and ingenuity).</i></b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Subtotal</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: 1.=
+8; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>3,5</i></b></div>
+</td>
+<td style=3D"border-color: currentcolor; border-style: solid; border-width:=
+ 1pt; padding: 0.75pt;">
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"text-align: justify; line-height: no=
+rmal; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot=
+;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>&nbsp;</i></b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>&nbsp;</i></b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Key Grading Notes:</i></b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt 18pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<i>Individual Workload:&nbsp;The report must clearly delineate the individu=
+al contribution of the student, confirming approximately 50 hours of effort=
+.</i></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt 18pt; font-family: &quot;Times New Roman&quot;, &qu=
+ot;Times&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<i>Ethical Considerations:&nbsp;All projects must strictly adhere to ethica=
+l standards, particularly those involving data or security.</i></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>&nbsp;</i></b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: norma=
+l; margin: 0cm 0cm 10pt; font-family: &quot;Times New Roman&quot;, &quot;Ti=
+mes&quot;, serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<b><i>Sincerely,</i></b></div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);" class=3D"elementToProof">
+<b><i><br>
+</i></b></div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);" class=3D"elementToProof">
+<b><i><br>
+</i></b></div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);" class=3D"elementToProof">
+<br>
+</div>
+<div class=3D"elementToProof" id=3D"Signature">
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);" class=3D"elementToProof">
+<br>
+</div>
+<p class=3D"elementToProof" style=3D"text-align: left; line-height: 15.4px;=
+ margin: 0px 0px 0px 4.45pt;">
+<span style=3D"font-family: Montserrat arm Light; font-size: 12pt; color: r=
+gb(0, 36, 81);">Kristina SARGSYAN</span><span style=3D"font-family: Calibri=
+, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; line-height: 15.4px;=
+ margin: 0px 0px 0px 4.45pt;">
+<span style=3D"font-family: Montserrat; font-size: 10pt; color: rgb(0, 36, =
+81);">&nbsp;</span><span style=3D"font-family: Calibri, sans-serif; font-si=
+ze: 11pt; color: rgb(0, 36, 81);">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; line-height: 15.4px;=
+ margin: 0px 0px 0px 4.45pt;">
+<span style=3D"font-family: Montserrat arm Light; font-size: 10pt; color: r=
+gb(0, 36, 81);"><b>Doyenne de la facult=E9 d'Informatique et de math=E9mati=
+ques appliqu=E9es</b></span><span style=3D"font-family: Calibri, sans-serif=
+; font-size: 11pt; color: rgb(0, 36, 81);">&nbsp;</span></p>
+<div class=3D"elementToProof" style=3D"text-align: left; line-height: 15.4p=
+x; margin: 0px 0px 0px 4.45pt; font-family: Calibri, sans-serif; font-size:=
+ 11pt; color: rgb(0, 36, 81);">
+<br>
+</div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);" class=3D"elementToProof">
+<img style=3D"max-width: 788px;" id=3D"image_0" data-outlook-trace=3D"F:1|T=
+:1" src=3D"cid:8069bd6e-5e19-49e0-9f6b-90ad0cdd845f"></div>
+</div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, &quot;Times&quot;, =
+serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+11pt; color: rgb(0, 0, 0);">
+<b><br>
+</b></div>
+</div>
+<div id=3D"x_Signature">
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; line=
+-height: 15.4px; margin: 0px 0px 0px 4.45pt;">
+<span style=3D"font-family: Montserrat; font-size: 10pt; color: rgb(0, 36, =
+81);">&nbsp;</span><span style=3D"font-family: Calibri, sans-serif; font-si=
+ze: 11pt; color: rgb(0, 36, 81);">&nbsp;</span></p>
+</div>
+</body>
+</html>
+
+--_000_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_--
+
+--_004_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_
+Content-Type: image/png; name="Outlook-jwelr2o5.png"
+Content-Description: Outlook-jwelr2o5.png
+Content-Disposition: inline; filename="Outlook-jwelr2o5.png"; size=16735;
+	creation-date="Tue, 30 Sep 2025 15:32:25 GMT";
+	modification-date="Tue, 30 Sep 2025 15:32:27 GMT"
+Content-ID: <8069bd6e-5e19-49e0-9f6b-90ad0cdd845f>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAdIAAAB8CAYAAADdATEcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOwgAADsIBFShKgAAAP9xJREFUeF7tXQd4VFXaxnXr7/q7/rur666ujSI27IoiCCIdREBQQKp0
+KYKANEGKCgLSeyd0CAQCSQhpQCAQCL2E3gkldJB6v/97z507c2cyk0zPJH7f88yTZO69p7zn5rzn
+K+c7BUhEEBAEBAFBQBAQBLxGoIDXT8qDgoAgIAgIAoKAIEBCpPISCAKCgCAgCAgCPiAgROoDePKo
+ICAICAKCgCAgRCrvgCAgCAgCgoAg4AMCQqQ+gCePCgKCgCAgCAgCQqTyDggCgoAgIAgIAj4gIETq
+A3jyqCAgCAgCgoAgIEQq74AgIAgIAoKAIOADAkKkPoAnjwoCgoAgIAgIAkKk8g4IAoKAICAICAI+
+ICBE6gN48qggIAgIAoKAICBEKu+AICAICAKCgCDgAwJCpD6AJ48KAoKAICAICAJCpPIOCAKCgCAg
+CAgCPiAgROoDePKoICAICAKCgCAgRCrvgCAgCAgCgoAg4AMCQqQ+gCePCgKCgCAgCAgCQqTyDggC
+goAgIAgIAj4gIETqA3jyqCAgCAgCgoAgIEQq74AgIAgIAoKAIOADAkKkPoAnjwoCgoAgIAgIAkKk
+8g4EHYHbd+7R5p1nacO2M/zJUJ+UrWfp6MmrQW+LVCgICAKCgK8ICJH6iqA87zECp89epweLjacC
+hSdQgUJj9M9zM6nt96s9LkseEAQEAUEgtxEILSK9eJG0nTuJVq0imjWLtDFjiAYOJOrXjzT+4Cf1
+7Uv0889EU6YQRUeTtns30a+/5jaOUr8HCIBIH3oVJMqfgkyi+BSZQe36rvGgFLlVEBAEBIHQQCB3
+ifTyZdJiY4n69CEqXZroP/8h+uMfiQpws9z8aH/6E9GzzxLVrUs0YwbR4cOhgay0wiUCINKHX5/I
+RDqOSXSU/ikyjdr3EyKV10YQEATyHgK5Q6SpqURt25L25JNuE6a7xEp//StRhQpEYWFETNR+kdVs
+ckR5c+eG3mfOHKKpU4lOnPBLV4NRiBBpMFCWOgQBQSBYCASXSNeuJa1KFaL77vM/gTrTYJ9+muin
+n3wn1BdeCE573dTCHRcV2j/+QXTmTLDeGZ/rESL1GUIpQBAQBEIIgeAQaUYGaV9+SZqXROG2Nuqq
+/IIFiWbP9g72s2dJe/jhkCZSWrTIu77l0lNCpLkEvFQrCAgCAUEg8ETKAUH0zDOhQUT16hFlZnoG
+5MaNodF2F4sErVw5z/oTAncLkYbAIEgTBAFBwG8IBJRIteHDie6/P7SI6MUXiRAZ7KZo8Ivmliad
+Q70q0MqDvrjZ5YDfFiwi1TSNMi/dJP6RRXBNJGcErv96hy5evkV37t7L+eYc7rh56x5dunKLbt32
+vSyfGxPkAvLi+3bz1l019vjpTG7dvsvjeZt+ven8epAhztXqAkakWu/eIUtA9NhjROvXuwf8Dz+E
+bD+0jh3d60OI3RVoIsVE3euXDVStZRTVahtD1VpEUc9fNtpNCIgQ3n3gQoghE3rNmThvFzXtnkTl
+Gi2lM+dveN3AqKSj9FGjSGr1XRINmbyVvh/JAYe/ETl47DK16ZPEC7q8tXiLTT5OzXokUZkvllLS
+hqzBjOvSTlPznqvVuC6NO+R2/7oOWkdrUk/mq9EPDJEiwCdEtTijXSpAZ/v2HAdTa9IkNPvy+ONE
+ly7l2P5QvCGQRHrvnkZ12sdQ467xtP/IJbp+44762bJXElVsusyqDVVosoy27TkfivCEVJuA5x3O
+RFWiziJKP3TR67aNDttBLXom0N27GkWtPkq1vuI94HmMWLzt/M59mVS2YYRTy4i3ZQbjOQwPxr5e
+xxiauWSv0/HCdSwShk3b5vZ4ftJqBUXzO5Cfxt/vRKrNmxeaxOOE2DVE9XIwUbZSpkxI9kfDlpc8
+KoEk0vj1x+mVqmyOdyLVWy2nsbN2qCsft1xBi2IO0r7Dl2jvwQvqs+fgRbrApmAITJAQaLcHj10h
+pDV0Jbh2+ap+vyH4G6RhCAgdHwhMZVev37Zew4R16Yq9CRrXDZPaNf7dbD67w+U6qw+TmlkOHb9C
+B47qW8BgmkU5hqB/IElDcO0Gm3ENQVnmOj5iIsCCxBC9zbeckgPwuHLNVheemTBnF3Xor+8TTkg5
+QZW/jLTDfi9jj/JRLjA32nKK9xwfP33NJfa4gLrM45MTvsDaEIyts7HIFhvG0oyN+Xlon6fO2qe6
+3HvoApWuv0S9Y1iM6O/bRfU72o33xFye+XeMoRlL9R6Zxgn9uHjZ1p/DJ65QOr/T5ncP92CsDIyA
+j4HvyYxrdvjiPTHjg2eb9YinOcv22REf2miY+7/5KZmwUDIT45Vrrk34n3eI4fdhN4+/BYtDl+jY
+qSvZjnGoX/Qvke7bR/S3v4Uk8bjUkLHn1NXK+CZPbk89FXL90UqUCPX3Ktv2BZJIU7efoXnL9zut
+f1ZEOjXswlmzWKo0j1Rm3w79V3MiCP3T5vu1lLRRNzk17hqnJocvvonl+1bRK9XmUfx653t11285
+TU2+jbOrs+7XK+00uGHTtiqTJmRu5H769ud11vsxKdVuF203IXb+aa21H72Hb6DJCziDl0WQpxjt
+Mkv9TrEEzQdy/uKvXF4MtzuWvmTTXK9fUri+9dwf3QIDkqj1VRSdyLBN+APGbKJxc2yxA9DWG3S2
+1eFIpJi8a7RZwZO8/QIC5SduOKm0T7OASIExJHnzKSry0SyVgMPAvh3/3mPIerrLbVu59hibgBPp
+x3Gb6bMOq6hMg0j6jK0MxkLEcXC/7B7PddrGZt7yA9Rl4DrrxI62wkpx4ZKeAa1d39X084Q01cY6
+HeJ5bBfQ9PA96hpIBmNx+qyNvPuN2kST5pvxz1DvkUEcA0ZvUm3FmLb4bi0v0qKVlmYshEBuRcqF
+Efpo6+9q6vTjWsrksdq+l7H+BuXpPft6wFoaxO0DBnU6xKn2TZy3U9U3YsZ2rmuTtW4QZiNuy6KY
+A1S/00qFF1waxWsvphmL91jvq98pRuW3hkQmHLHgu0ndX/qLSML7Ch/20ZNX+LsYu4XJl93jshBp
+wy6xhPcegn44EmmbPom0POGw41Cpv+t1XMnWoeXW/73WfVbTqJn2ROz0wRD+0r9EWrZsyJGOWyZm
+ZFZyJunpRH/4Q2j16fe/J0pJCeFXKuemBZJIs6sdk3mLnonqlupsXtq133UEN7Tamm2iCCt2yPTw
+vVSsylyngReYxD9uudyu6vKNl3L5Nh9sv1Gp1HvYBnXPZJ6UW36XYL0f2kKZL5bQ+Qs2H2SzHnE0
+daE+uXcYsIZGTNc1aUjK1jNU6ctldvXBbL1lt76XGCQJP5Qx0a/ddIr+9toEK5GDSD+ot1hNmoZ0
+GZRMgydusf69acdZqtzMVocjkUJzL8VlOGovKCBmzTH6tC1H65vETKSxyceofsdYl6Y9+FMfeHkC
+Lzj2KdMiyPqDeksUuTiTGjxOMWuOWi9NWbCHfXcJ1vLR1g8bRNC5zOvqnhqto+n16vOURgRZw/g8
+/cEMOnXmulpkYCxOnLZhA41r2NRt1vJBIFiIGcTXmUn76dIzKG2XTlTQ9kD8nfk5jAF88VVbLHe5
+XsfCAhq6UV4dJnK8a7CQ6OOdweVPV4E/gydtoW6DbWOL669Wm0vv1VloJTZ8l7brHBX8cCa7L86p
+Mio2jVDlQJYzkT7w8nhasOIA3eaAISzkSn4ezmS2nc7xO/hRo4gcibRK82XWxYszIv386xhaFH3A
+6RhDI41bd8zpWObVL/1HpMj8E+J+UZft48hiDdmWHGU5T46h1qfmzfPqu2ZtdzCIdEd6JqXuOGen
+xYBgpizUNQsQKSYbQ2BOhAZw7oKutbxTy35iwnel6y8maBeOspoDJ1C2WarxxGkOZvppfBqBTCHT
+Fu2lr75Pst6OiQxECO3EkNa9E1ij2Kv+NExnxrVUJjmYqc0CIt/DJsPT567zpJp1XzG0NqN+kAWI
+0WxO68laK/xchoAUPmm9wvq3M40UE64zIkWQSj0mSrNAozM00lXrjrMGZE+kEasOUX8LPotXHlRk
+ZjYVzmFSNWuB5rKhbYKcDZm5JN0uuAcEBHyNhQrGxngPjGdg6sc4QrAIOmki0u5DUmjkdFs8xcbt
+GayNR1nb15Y13D4jNtq1F4FZ8CvfuaMpE3blZjaiRB0gY4No8Xt1rt8gUizgxs6219DwfqVyvdDc
+YGEwsMFPEOkqS/+hdXYbvIGDuTbRi5Vm0/ufL6Nw1lahZaLdkPCVh6gsLyzMhrgwtta07p2kiBSL
+NLOpHBoprCjm8aj5lQ0vEOmYWbrGbEijrqsI4+jMDwoiXZF4RHykdv8h/IcGE2jhwqFHOh6QoPb+
++7B52XVNGzEipPqkPfIIESe3yOsSSCKF9gHTXM2vVlKjrglMGEuVWRTmRmgh167rfkBMpuZgI5jh
+QEBoGwQT7/4jF61Q3+V3AxragaNZA7ygkToSKUjX0HhQCEynfS2RqlO4PW372ogUpthSdRfb+cJa
+9kqwmhu/Zo3UbHbFhF+J22eWyjz5wecGP2OFJkuzvCK9h2+0I9IPmagMbRs3w8z6y1Td9AzZsvsc
+VWWty5APv+BFBPvrDIG5tCS3+fJVm3/OuAaNFOY7s4xna4DRZ5huYUo0T7LoH8zj+A6+6ybd9N8N
+WRB1gJo6fGdcg/ZrNrujLlgejOexUMFCwFio1GGzt1mDxcKiEmuEx5k88TsilDPO2Uy7IEqYLg3Z
+yO4DLFyM8jv0X6t8wGbB+1Sqbrgyl2JcHIl0ORMJ3kF00ZFIgd2y+MN25cHMvmHr6SxECtMuxhvv
+7fHTV1U/sZCBr7YlLwx7cbT6mfPXlRk+hZ+HzGdNVMfSVsVcdofgHTibmZVIGzMpAn/zeOB9MxYe
+8H1j/MzXP+sQLUSa5b8why80JIv3gLQ8uVf7179I4xR92vPPk/bPfwasHtWmSNvEobrcoUNg6/MQ
+M0Xs+UACSaTYrgFtxhDdbLWIj2mbzSH6tsmpHGtTZl8qzImPFZ9i9VMiqhdBIYYgsAIrdUxQjgLS
+ebvmAuvXIOA/PT/GztQGkgaZQsJ5pW42zUJD+/ML43jy1kkck+OzZWbwhKf7ersNXq/8UIYMGJNK
+T7Ep0pBDxy/To+9MVoFF0CTQFsPMiHtADi9WmkPD2U9rSPFPF9rd8yr7gOGbMwQa9Lt8jyHQrhBp
+aQiCT/7z3lQOgrIFKBnX4KfGosU8sYKc4COEbNpxhl772P468IZFwCBSR+0TY5UdkRpmcJQPIsJC
+xqgf7Ybp9qrFnwsihUZkyNhZ2+mn8ZvV/cDq3doL2W9ps1ZAszObyvuxTxSmULNPE6ZyMzHNWpqu
+NFt8dyrjOr1ceY6ddaRpt3heqCxzSaRLYg9Z24df4P/cyOf2QjOG5m70De8K6jmb+asK4kK5Rjtg
+9Rg/d5e6FxoiCBSCn/Crmts7m8cTRArSrdrCXntu3TuRegy1acF43x5+bSKPo27KhoYMf7NRHsj4
+kbcnKxO/M4FG6mw7jdOb88iXvpt2GT2teHG/Eg5S8mmc1J6SeO/VBZ7M7twh7TZHAZ7jl3slr3Sb
+NSN68EG/1qmIFBG6ZqlWzf91eEie1u06b7yBGTaPvFbZNzOQRIqAm7eYSH4cl0ZT2YTahgMZMNF0
+/XmjWrkbWihI6on3p1P/0ZupL09MmKRhIjP2SjojUvihYKZzFJAsVui1262kwRxQhKATTHYgp0ET
+9b9frjLHSqSIwnyrxnxCkAUIC3squwxMVhox7ofJDz7ahawFQODLBbF+PzKNevKEBs2xLvugarEm
+hvtb9kqkQmVnqqAVSDhrdHgeftXpi9MVCWCib9FrNWs6R1VkMki1WJX53N5tKpoWgUggv++Gp6r2
+QOMt3zjC2lVo9U+XDuP2biEEPzXszAFYXIezYCP4NauwKbNysxXcvi1M0GsIxG1E7eJ61ebLWetf
+wX7ZrarvaJ+x1xIaqSORwsxdu53NnGoeAwS1PFtmpsLiG2Vm3MGmyyVc3hoVBASs0FYj2Kgik/aS
+2IOqCGh+RcrNpQXRhwgEARk4YQu9+rENG5hTQfx9RmxSJtyKTZcqi4VBHN8xHnjHMM5TF6Xz+7SJ
+iXOuIj5DQHDvcgAQ8MZ9eF8+bYv+ZNVIoakapGc8Dw14XdopGj59m8J1adwRpYXiedR9hF0OiB6G
+5jlkyja2wuxh03K49X0dNDGNOjPOINWwiH3KgmIm0qmL9igSzrx4k16oOJvxOMymYN3nDsL8b8np
+/Pw6+nniNnVucJFys2gt7yOFQON+hn3E7VkzH8zXEcz1fAUsXJ2bb2HpaNcvmWYt3Uer1uWdwzay
+m9V8J1Jk1kEAjJcEkSUBe9WqRAf1lzxb2cv7msqX91u9aIeGZPpbLat2mHlfftm78h96iLQWLUjj
+o93QRiw0tKJFSXviCdI4qlnzAi8NZ7TmEwkkkQIiaI0DxqRR96GpHG25x2oyxSo/erVtlbw69RT1
+GblZRWRCc8UK2tgi4kik0FSg0V6+ar+twxgSTGJDeJIEkUIDgWCTOsgvefNpRYbQ1AwBBgPGpikN
+wyAj+Kn6jtrM0bfn2S+61mraxTNbWetFWw2/KcgbRAmigkkPpk1oAoaAVPtzWSA+bLVAPRWYuIZM
+2cFBRnq0Lvxe33OZCEaCwMeKv1EH2ueoUWDSQxvg48ViAEErrrIU4Xv4zfqMSGXNPEORlGEKRF3G
+ddSH6yACI2J6IQepOBIpzORxrLm7Elz7ftQWq9UB5nL0HSSIxRG0UmMLEawPqA+yht+BETN307Dp
+u5Q525A5FmyQdACCwDG0NSwiKzbwYUNDxxhjYTCcx8VwERjlgcCmccAa3geYttEm/IQ4mnaBu6Pl
+A6ZoPLOPrR2/TNupxtHYLgQiNbYmIXBt5IydivDMZUBbRVwAyBP3xlrqNtqXzvji/wHv+YS5u2nw
+lF282LAlWUDf+o5K475tV1ortpmZXQMY3/78P4f/gRP8PuKdd2a9QX3oy8+Td6gFS/VW0SoILq/v
+KfWZSLUBA7wjG2f7Opl8PBJoww0a+K1+RerIZMSiwRfp5VYe7fXXs3aD/cjEB5fTSQ5owGHk6zjy
+bgUHc0ybRjR4MMeQdyKtYUPSoAWXLElasWKk4ZxVaOdNm3oES6jfHGgi9Uf/y7JvdU8uZj7So3Zt
+Wy587VN33loyeOJmX4sJyvOwFtRjU2ZemFxB0C9WXqRMvcD4u2Ep/NnApvhkpRGb/eyuwEPU7sct
+bMFGnoAM0y4iks17fJ09j2CuSk3tTbae1BOoe+GKQGBgXhffibRUKf8Q2Ycfut7PmR3KrDmqfZX+
+0oiNPZobeKuCt2XWrOn7e8HmbLrKmgOIFyScjyQvECmiMs3BQsGG/+sBq2k2+9n8JT+M3cxE6nz7
+iL/q8Fc5mPQRKJMXiBRbXdqzaRzWAUR8Q2s0PvB5Z5fIw8BrR/p5NrPPoQ4/bFRBPZ4IiBTR1YZZ
+2tmzCAyDKdfs4/akDrk3ZwR8I1L2WfojAEglX4eW5q1s4/RUf/yj98RnJkz4Xm+wicyXDE2dO3vb
+k9/Ec3mBSGEic8wOE8zBganYWSCPt20wZ1bytoxgPYeIV2e+12DV72k9IFN3CNNVuTCnwky699Bl
+a8CZJ23I6V2FGd0xE5Yn5cu9OSPgE5FqrLX55YzRzz7LuaU53KHBt+qtBun4HOfg1QYN8r68kSN9
+7k9+LiAvEGl+xl/6JggIAv5FwDci9dO2Fw2JD3wUDb5GfxHpggWktW7tfXmLF/vYm/z9uBBp/h5f
+6Z0g8FtDwDci7dXLe7KxkJ7GEa7KD+ijaDt4w7Sfzj7VfvyRtCpVvO8b/KsiLhEQIpWXQxAQBPIT
+Aj4RKTVu7D3ZGET60kt+2R+pnThBipT9oJVi6wq98opXZWl//SvRUdvG9fz0svirL0Kk/kJSyhEE
+BIFQQMA3Iq1e3SuyMZOdVq6cf3A4xXvh/u//fG6P2k+KxAyPPupdWU8+SXQt+2Of/NPhvFuKEGne
+HTtpuSAgCGRFwCci1fxx2kvt2v4ZlwOcCxLRv/7QSB97jDRvT315913/9CcflyJEmo8HV7omCPwG
+EfCNSL3N/GMmu1q1/AM7Mv/4gUR9LoOTKmQRpDc8zllZ0ngfH9q5jBOOR3D6taWcXJxTHqqTZ3A9
+n6QAzGlAhUhzQkiuCwKCQF5CwCcipWHD+JTcdqR9/bVXH0I+3dmz/YNX//4hQaRaz56kcfpCmj5d
+z1aEg8MLFSL63//NfqsQXydOzE+czEFDdqXVfAjyrayHJvsHrNwtRYg0d/GX2gUBQcC/CPhGpP5t
+i0+l3YNfMxQ0Uj6hxl8mZnruOdK6dydCPuN8JEKk+WgwpSuCgCBA+YNIOUpWe+CB0CDSQJA5Z23S
+ECG9Z0++eGWFSPPFMEonBAFBwIJA/iDSfv3yL4maiRlba3BIAPLw5mERIs3DgydNFwQEgSwI5H0i
+5a0mOJ4sJMy6gdBGnZ2SwwcFaO4cNReiL7wQaYgOjDRLEBAEvEIg7xMpjiDzI4Fpf/kLEc4l9WOZ
+ASkLZ5umpHg16Ln9kBBpbo+A1C8ICAL+RCBPE6nGSRg0PyVhUGTHJKoVKRJ4Ev3vf0nDsXFt2hAN
+HUra1KlEkyeTxiZqDUewPf64W23AIeE41zSviRBp4EcsN0+uCXzvglfDXT5A3VvBqS4ivw0E8jaR
+1q3rFuG4rRFyWkDt/ff9W6aRCpEP+9b69CFav57o8uXs367MTNKwtcidg8UfeYQo3X/nVgbjtQ8U
+kfI57zSLz/DEeZDOZO2mU4RPfpdTZ6/SWzUW0MFjObxn+R0IH/t3IkPH8cjJKx6XhHexXKMIWhJ7
+0ONn5YG8h0DeJdK5c/1OeFrfvl7n2HVK1pwhidq3J4IJFv9ZngonatDcSFWoITFGHkpLGCgiBbyf
+dYihb35KzoI0tIM3qs+jlWuPZTsKh5h8Bk3IGwdgu+oIzvNcl3aacE5moOTKtdvUZ8TGQBWvyu0x
+NHddF8AxefMpPhf2rlf93Lj9jMtFnVcFykMhi0DeJNJ9+0h7+GG/Eqn2zDMqCYL25z/7XK7G+z9p
+xAiiM2d8HngNGZDc8Nfea9XK57qCVUAgiXTX/kwqWn4W4WBssyyJPUQfNVxi/Spt1zkaO3sXzVu+
+33qA9rFTV6jDgGQq+OFMmrIwnZI26qcSHT15lQ4dv0yH+TNn2T7rIc5HTlyhSfP30swl+wiHK7uS
+46ev0uxl+2ncnN20fe95ddu163es5Zuf23PwAuEDyTh3g6YuSqdp4el0NtOmZZ+/+Cvt3JepDmsO
+i9hHkxbsJWhPhsCsuyM9k+7wT8iW3efUvQkpJyl+/QmnzcTzkxek04wl++nCpZt29yRvPk2jw3bR
+3OUH1AHUuN5/9Cb6z3vTVP+jkrIe0oCDubftOU84UHxu5H6aMG8P7T9yKUvd+w5foonz9ygMjXox
+diOnb6dH3p5Co2ftYq3ukHru3IVfafeBTIUF+m0cVn3uwg2avjidx2wvnTLhYK7sLi+kNu88SyDH
+JbGHeSz2cFk6zhg7A0f0zxDgBxyNQ7vRLowj3pukjTaCRbvR/nFzdvECJsN6P8o3H6iN+8Ii9nN/
+0yn90EW78ULbcAD3isSjNIb7vGGb73OHyxdSLvgdgbxHpFevkvbaa26RizsEZNyj8dmqWmSkT+Uq
+Ap0wgeiGc9Oit6On/KlukCklJXlbRVCfCySRoiNVmkXyxL/drk8Vmy6lRTG6ma3XsBQq8Vk4fT8y
+jZr1SKLiny5UZlBM6l90jqci5WbR96O20sLoA+r+GYv30stV5qtyuw7SfdKY3GH26/lLKnX8cT29
+V2eRmnQdBSRWrvEy6jwwRd37QsXZTCz71IT+ds0FtNFhwvyoYQRt2nFWaZRv1VhIXX/eoD7v1FrI
+2tFpVfyGrWeoaIU5VPfrGFX3V32T6blys2n9Fv165sWbrH3Pt2pD9TutpHdrL6RqLaPUQsBRMHm/
+WWM+dR+ykbX5FMZjAaXtOqtuGzhhMy9AltEPY7dQmz5rqDNr+yD4tn1X01OlZjCWm2jqwqz7m0Ga
+L1WeQ5+2jeJ71/ICZR0VKjuLIhOOWKsfN2cnvc5WAuDSvn8y/z5f9QHkA5wfLzGNvh28gYmFj0hk
+Wc0LmxcqzqWqzSOpRa9EAlkDv7drLqTOg1Ko+9BUhWmsE6vDzVv3FIbVWixX/QBuGIshU7ZT9VbL
+uf51Oo7lZ1Pq9gxV39nMX1XZFy/fVH0u12gpteuXTD+M20I1v4qhxA0nCIukD+otoU4/pvDiYjPV
+aBOjxg6CsVy5RreApGzNoDc+WaD62fOXjarfY2ZtZ0OVpoi3ZN1w9X4175Go+vw8j+/PjD2ui4Q+
+AnmOSDXk5nWHVDy4RytaVI2U9s033pWN4KDhwwNmXlX+Ujf6o735Zp7I1xtoIoX5FiRnCIgJEywk
+hie2V6vNVZqSIYMnplHlLzn/McumHWeoZpsou//csIh0+ufbU61aIXyw79RaYKf9rEo+riZ4xyAf
+mEDvmeJVMEmXYNKFjJq5gxp25tzLFkG7P+FJHfJBvcVK6zRkG2uyZRssYS3zntJqH3h5IuE7Q0ZM
+36YmYsjFy7e4jnBre6u1iLRec5ySMllLeq/2IoJ2bQjMmSgLEzwWFYbmZn42gzEAUbia6KHFP1hs
+AuNt01axkHmXFy14BpaD5yvMJlgBDMHi5M1P5vM2aR2wkp+H25UPgvprsUm8YNH7fev2XSrLbTAW
+EPgOC6LS9RezlmmvVWNc/vv+NAJOhqxad5zuKzKZiZfzXFvkp/FpVOurKFUvNOBSdXXM4Xt3bA8e
+GTJpiyJnM98ZQUbAEGSLuvH+hcfoCzMICLho+TDGQdeKnyk9nRcr7MqxFIR+PFcujM5zG0RCH4G8
+RaTffusWobhDOnb3IJE8i8en2eC0mc6d2Qanr2ADJVoUT+xuEKm6Z4nNfBmo9vhabqCJFO0D0S23
+aD8Nu6zi1b3u92z1XaL1d6Mf0A6hIVy/cZvWcDASCNEsE1hz+uKbWOtXIDxoLsN5UsbEi8+P4zZT
+kY/CnPrE4tcfpwFj06j/qE3U8YdkK8nDVPgGEwcmVUjtdlHKh3v4xGV6tsxMu/KHTtnKGl2YMq1C
+WwRZmAWa74df6GMPU+X7rHEb5uCabVbQ/BX7nQ4bzNcgy+HTbH0ZPHGLMm9DEwNupeotZW11A2v0
+h6xmS5ifQfYG6TkWDtMltHQz0Z44fYXbpX83dMoWat07MQsRl/x8MZuEz6mxeJcJ3mwaxWIFATxG
+mdB6C34YRr9MtbV9GPejEH+HBZFZ4OfEguHoSVsAFrCE9g1CNmRN6imqwBYE1AETOrRNtAEm49L1
+l7DFIo6GTdvBY3BOPbLX0s8m3RKZpHfYLX7wHq1n8gcWKMdRuWzdO4nbvlXVVYJxcQwO+5AXToYr
+wNf/OXk+sAjkGSLVeHuI22TiLungvmbNdITZHKv8pO4+y8no1aktwRBE+rrZLq1ECe8Cm4LRD0sd
+wSBSkB9MdiCDV6rOVT8h7dgkOWDMJrveQjuFWRGTLYjl45a6VmjIxHm72AScYP07jjWZYlwmJval
+cYcpYtUhil59TJlkDX+acfPMJelUhgkufOUhRZL4GxqpobXAVAoShunQIEdoovDz4n6jfPghYR5E
++dDMQChmQd0wPUIcibR222iu33n0KKKYX64yl2KTbXWhLxu22Xx9W9nXCR9pAzZ7w8+M8g8cvaTa
+62qLx96DF9V1M9FC6wX5gjjgAwWmjhotyBfa6jVeZIBIrzGhGgK8de1PN3fqWtsstWAycFqReIQ1
+1Az1vFkQeIW6j/AixRD4vDE25mCixA0n2ToRaUekGeeuq0dQb8SqI8ol8F6dJVYSxJhgfHsNS6V3
+Pl3Mvtrd6n5FpGyqBlYgSkciRf9H8mIM5ZauH84+5IvWtuHesoy1EKndMIbsH3mDSOPjvT8fNBsC
+0goXJrpiMS3xFhKNc9rmRFiIotUmTgzugML36S6R4r5gEbyXKASDSDFxwhRXnrWLboN5IWKR1akn
+lUnRHFTSZeA6qtM+Wt2B65j0zDKBg0iafBtv/QoaCjSZhBRb4A6I2mymNG5u0DnWTgOOjD+sfHPG
+pIoo4fKNl1L9TrEcxKL7AqEhl20QQQuibKZA9OfgMT1YB1qToX0a9aRyhCiegYDooH0ZGmktNlUv
+iHKukWIRAe01Ksnmu4Q52uiLY4AQ2o5AGJSNBYor0y6IFPjfNml7IC58B3IFqYIEoUkbAp/p+58v
+4ut3lRb4UuW5dhopTLCVmuraIgQmV5De1EU2Hy1IzVlQE/BDP9EGQ4z2mKObYT2o2MSmkUJDRpAQ
+yDTzks3MupgXJnhP8D3wMgSLLowDmgh3Ad4RtLdU3UUcjLTT2vatrHWj/xh/3FuS+73v8EVrOfiu
+zBeLhUi9nGOC/VjoEykIzo0tIO4SjfU+JII3JzMID8+RrLQ6dTiEM2uEYsAHbd68HNtm7r/WrVvA
+m+RLBcEgUrRvEPs+CxSaaEea+B7a0Lu1w6nld2uoVtuVVKHJUjbJ6loHzK3Q9up1SlSBNdC4Ji/Y
+TY26xNl1GRpb8U8XMQHGUfOeSTwRLqFl8TYyMhMcJtxuQ1L5k8LBN9Eq8MesyTXuGkf/98ZEO80I
+fklM/J91iFXtRPkIejKItDRrV2ZB0E0ZNj1CQKQIoLKadltHuTTt4n6YinF/PaMv7BeEvxKT+Wft
+Y1izj+YgmbXc9pXUtFucinI2rn3cKkYFHhlam9GmPdx+9NtMpId4IYDvDG1xUfRBNsGHq4Av1I1r
+0EYhIB+Y4cs1jmQTMMq/oRYQBskZ9SCaGlrlp+1WMk6rGafFNJ4XPo4CsoS2izZYn7W0x55IT9iZ
+dhGUhv7Ct16q3jK1oEKwEnynq1iLhzZcsu5S+rJ7ArXidqJ+I9gJpG/8DlP4+7yIQD/R37drLaKF
+loUSTMslPlvIJmDdX6r3n/3krKXCzC0S+giENpFeuEBasWIekYjbhDp6tP3o9Ojhuh4kPZg2LddG
+U+vd2zMMkJ3Jz5HD/ux8sIgUE+Rey1YSx/Yf5U32S+OOsgaaNUEDtLTIhOPKVAuBJoL7HQWaIybY
+yISjWYjEfC8IDXVhywSegTZmNvNB43GWPAFkG7fuBJd/zE7bBRHBXGgWtNn4DsEt0G6gsUEOH79i
+NW27GkdocrFsOkVdZm0dbUjhKOEIbj+2dpgFW0qi2Ay8hrV4xyAr9BOaoVljBWHgO/MiAltXsABB
+3c6yMeF7bNtBX9BvV0kmYJJdFg//svPkCagTmJj9oc7ag4WUUQfqRHsNHE9lXFfbU5bFH7X6tYEH
+tPfl/L3je4ByzNuw0D/0B88jkMlMmqgHmJkF33m7h9Wf/69SVs4IhC6RItSxalXPCMRd82fLllmQ
+0apUcV5X5crsjMnd7CRa+fIe4aAhV/B+56a8nF+JwN8RLCINfE+kBkFAEBAEeHoOVRA0ZARykxg9
+uU+R0l2HTCU3b2bNsQt/6cCBuQ8PTMk4Ps1NLLQXXtD3wzr2Mfd7Ym2BEGkIDYY0RRAQBHxGIDSJ
+dORIt4nDXYLBfdqrr/Imu4tZQTt8mLT/+R9bnTCNcpajkJAhQ9zCQnvoIdJ69rQFT4VE4503Qog0
+hAdHmiYICAIeIxByRKqtWEHa737nFnl4RKL//rfLQCEtlvcIGhpf7dqciyxEHPw4wPull7LHAguA
+Fi2IDtgiPD1+C4L8gBBpkAGX6gQBQSCgCIQWke7k8HA/59BVBInECdlomFr37oqstJ9+CijYHhc+
+c6ZrEuWTYTQQ6J6s6dk8rifIDwiRBhlwqU4QEAQCikDoECm0QOSqddMX6NF92e375KAmDcFHOE0m
+lORXjupD6kJHPJ56ighRvEeybrUIpeZn1xYh0rwyUtJOQUAQcAeB0CBSDozxOD2fu4TbqVP2OCAo
+J6fzQd1B0s/3aN9/byNRmLpLlyYKCwvJtnradSFSTxGT+wUBQSCUEQgJItWQps9dYvTgPg1bV/Lg
+6QlaYqKOB7RP5BfevDmU3yGP2yZE6jFk8oAgIAiEMAK5T6SDBgWGRGEWzcx6rFUIj4XeNN6KQ0OH
+Es2ZE7DTZHIbAyHS3B4BqV8QEAT8iUDuEqkbafm80lQ5EId26HlLRUIPASHS0BsTaZEgIAh4j0Du
+EWlaGmkeJBrwiFAj7E/GcAUP0oYhDdduPhMQH5wN6CwVnOPzSD2HXKjm54y8prgXRIGyjOue/MRz
+OFDYleBYpsV80sRSPnEEPx2Pi3L1HCzcSFm2e//FHNsFTJC2LlAiRBooZKVcQUAQyA0EcodIT50i
+7emnA2LSJZiK3RSc2PFUqWl0f+Hx9PvCo+l+PuS3Iicwz0mQIPz+wqPo/kJj9Oeem8pHK220Ptae
+k3jfX2SKuubpB2V1GZjstAnI9fnAi+OpQOEpVKDgBP45jf5dfApdNZ0+4artyKX6Ip/ccX+RCdm2
+6f5Co+lPRcfQo29PUYcw9x6eapfoOyds3LkuROoOSnKPICAI5BUEgk+k2NZRsmRASFRr1Mgj3EGk
+j70zmU8ImcTENEYRU1nL4cjZFZTCZwyq+wsyqeFnkenU6xfbUV1tvkvisqZb7sF9HnyKzKCOA9Y4
+rX7o5C1c7lQq8Oxo26fQZD7jUj8VJDu5wwmzC/OBxwUKc39zbM9Yvmecjgtj8vc3p9HEuVlP1Mip
+TlfXhUi9RU6eEwQEgVBEIPhE2qBBYEj0vfeIQNIeCIj0iRJMTCDEZ0cxcUym8g4HJjsrbgMfsKzu
+f5YJEj9ZQ+w9PMV6a9s+q7ks1hrVPcYH97rxYVJ2RqS3bt+jouVmqmPB7Mplsnun5nyX50IajQKR
+FuXzDwsUYk3W2iYmZEdSVW0EUZvaDu2XsZnCx4n5Q4RI/YGilCEICAKhgkBwibRv38CQ6OOPk3bs
+mMeYBpdIzaSaze+sAXb6YW2WvuB8yCwkaiHz+wqNI/hOc9JIHYn0voKj7My8fygyhn7Hpl1lNmbi
+tC4UUA9/9/Brk+hExlWPcXZ8QIjUZwilAEFAEAghBIJHpLNnB4ZEOf2fluzcp5gTzsEh0jEEwpob
+uZ827zyrgoOy+2zgsx+Pn85KVlWbLbOQG0gYZMemV0NrZO23fscYz4iUNdPXqs2jnfsy1WdHuv5z
+6+5zFJV0VB2q/Dv2AduRKZP8oAlpOcGa43Uh0hwhkhsEAUEgDyEQFCIF0Wl//nNAiNSXA7eDSaT7
+jlz0+rXYtuc8/b4I+y0tpuTfFRpFT5acZjPBMqn+9aXxTgnYpWmXTcTvf7Yo2zaBNO20YNZSa7Ze
+4XU/jAcDRaQ4RDq7aONARiLbcL5Hv0zdSu36JVsPBvcZMD8WgAOlh03dZnfgtB+LD1pRE+bspLRd
++sHrnsq85ftpJR/ILiII+AuBwBMpH1FGbHr1aPuKu9mLevXyCYdgEunWPd6fKNOh3xomNAQZwcQ6
+np77KIxWJR9ncoUv0+Kn5es/jHGdASmLj5SJ9L3aC7PF79KVW/SPNxCIZdF+2R9bok72z7gzIIEk
+0qbfxtO0RVmDr34an0b9R6W60zyf7uk3OpU+4cXG/KiDlLr9TI5lnTl/Q22lCpYcPn6Fan0VTecv
+ehZPEKz2uVvPl93jKTKB5xYvpMeQFBodtt2LJ+URQcA5AoEl0qtXSXvrrYCQqIbIX2QuwufSJSKu
+S2UFun2biBPRZyvIr8vaSzCJ9NDxy169g5kXb9IjbyHS1hIQxVG7X/fXfaglP1+kR9aqQKkJ9BRr
+qddv8NFrTsQbIr156y498Z45GGsSlfws3Kt+mB8KFJGiji27z9ALvM0n85KNKLAv9o3q8wmkZQhw
+wpYgX8TxeQSEVWkWqUzj7sjdu/do7KwdTGxRhL3J3rQHz2A/tCEo59Zth4Prc2gMxvnadefvjflR
+lIvyfZGc2nb1Ov//Ooiz75y14fLVW06bdvlq1jI9ed641912+IKPPJs3EQgskeJsT3e1Sw/vu/f3
+v9M9BBk99hhpTzxBGuel1QoWVCemaC++SNorrxDxRytWTP/7tddI++gj0po3JxozRh3wjckj8FG7
+o5WPdPDENFoYdYAWuPjMX7GfYHJyTMYwauYOmzbK2ucfnhtHMPVCZkWk24gUflPWMhdFH3SbSEvU
+yd60uyr5mNp3ao3iZdNu7bZRPr/pgSRSNO7bn9dTi14J1nZ+2jaapofrWuopDpZqwlrrJ21W0set
+onnb0gYrEcGH3a6f/YHu67dkUKcf9YULSAu/j2Oz4keNltPKtfbmwe9HbqL/lAhjk3k41esYqwKz
+urP245g0o02fJDpy4golbTxJb9SIoP/yAujzjgk0a2m6qqf/6E2cbMN+HHv9kkKR8fqJPyDq3sM3
+UNdB6xQJ/3rzjlpAtWfLRY02sawRr+R9zalOI7lh2oU2d4dJ/C5HcvcZsVFhUavtSqrfKU4lKHEU
+9LvroPVUnctF2c17JFg12kzWbJt8G0c3btrIO+PcdYX/r5bvegxdT2N4wVCxaRSF8TvrKD+M3Uwj
+p2+jZj3iqUrzaKrQZLnS0oFvjTYxVJm/q95qBSdLscUOoO9rNp1SRYUzVtVaRlHNr2K4jTHW/4Hw
+GPvvF0brZ/b+zP+Ls5ftszYDbcK7gLpqtImmNaknrdcGT9xC+B9s3TuR64ihsg0jaWncYZ//B6SA
+/IVA4Ii0W7eAkai75KwZid8/+YRoyBCiuDjScPwYNFeW4GiklghdbDvB1hWXH9Y6WduMNU3OyEb0
+WrW5Nj8lE9lHDZdY30CswNU+WNP2ndJ1nWuMzjRSV0SKiTMh5QQ98wFvtzHKVtt8prF/bavP/wGB
+JlJoTa9UnUt7Dl5gPI8rLRECsinBfuG+bOKFaRMTM8ycLS2kG7fuOH1Qb7Fd/2A+LGfZEoXxeLzE
+NCrfeCkHjp0jaHJmgcZStfly3tebrt4taIofNYxQZnizAPfkzacVMY8O20G120Xz/bes1oT6nWIV
+8ZgFhDlpvr79CIuu+58bT8OnbVN9QLvwTLfB6wnvBLJsNeqyinoOtW3JMsoCub/KQWbwJ4+fs0v1
+BRrbNW57DPsNj526kmV8G3SOpS++WaV88Cgb9XzI+61v37lL5y7cUOVdvmrLhIU2vV1zIScK0TXE
+t2suoGJV5tLazRmqHkdB/594fxqt5oUFxgX9/PubU6hS02UKZ9T5zU/JCst7FmsTrmFBAdJ+qfJc
+2nvoosJz045zhIQph9kC9GKlOeodML5P4W1rkBa9EmnghM0KAxBqsSrzaCOb4a9weyNWHaYivE1s
+i8X/2qhLHP2ruP5/CSvHisSj9PQHM2jf4awLDp//MaSAPItAYIh00qTgkyiOGmPNlCpWJHUEWRRr
+TvDPZmPmDSqRmpMoOP1dT4IAAjMkmicKtRXF2NfJZtw5ppU07vv253V6piPlP+UIYY60hWblKFn3
+kY6hB18eR8VrLbT7IJvRCxV4v6lly0uBZ0daTMcTOdvRZJ44ffetBZpI0XdoDe/WXkRlvlisIpIh
+mDRBdGaBqRGkC7MvJtqKPEGbBeTycUv9GWhwz1eYzRYB1/5uEN6yeH7vLFK1eaTdmOLrco2W0jrL
+diVoQw2Z9MwCjXHiPPsEGF98E2vVqkHUpUwLJvjfX/t4ntKAQWIgw+17z1PR8rPovMN4ncy4Ru9Z
+LBFTF+6hNz+Zz77csy5NtjvSz9MbfI+jfNggQhEvFhMoDyRkCOrHgsQgzeL8TkVwSktXAovB0Cn2
+C7RiPCZmzQ/1vFljAZPqdVVMzTZRitzwPhYtP1sRoNl0D43/OSbEJbH23+PZdqy5D2cNGFKy7mIe
+H/uFzsAJW5TWDqKFZQG+dfxuCBYtE3gRIiIIGAj4n0gTEoh4S4q7WqO392n/+AdpxYuT1qEDabNm
+kbZli8dndToj0gq8Qs9JsOL1OCFDQUu2IATuOP3oGiu0IkNqfbXCRpKs0SLIyFHge33gJX4W5Sut
+cSpvXeExcBDnCRk4UAk+1iwfkLcliEn5X1mTZs10YdT+nKBx63owiFRNkp+HE8yohvTnQCDDTGtu
+KMh2GxMPxrXSl/ZEGsvmbYNIQbrvc5lovyvBBI89v4ZAG15tMhXie2i4BpHC5AySNAtMpVMW2ie/
+gFZoBFHhZ+OuNvJFG58pPZM6s9YG0zQ+7dmP3pI1L2iMZjGI1PBVjp3NPlo261ZuFkVNuyfSKYe+
+LU88wosPXaM3C4gGz95lrRtEev1Xm6aJOsxEWqHJMqXxuZJ6HVcqt4ZZqrVYzgsb2zOwMpSuv4QX
+Cbp5FzgbCxaYyOuxWfrjVjHc1iiKX68vRqHhOvseRDpyuh5s9E6tBXTyzDW7umGFQP0gT7gBpofv
+sbvehhOu4HkzubrsnFz4TSDgXyLdz/8Mjz7qfxJ9+GGiN98krWVLovHjibBv9EzOEZE5jaAzIi3b
+wGY6dfW888xGG6y3Z81sNJKTGUxUQUP/fNP55++vT6a/vzGF/TO63we+qr+8ANK1ECT//M+7U6ga
+T2rIB1yhcQT/jGDz11Le+oKoWgvxMUk/9MoE9gXaT/bOidSNJBFM4I++M53mRdp8SjnhmtP1YBFp
+O855DN+bISuYFGDaNQva8mKl2YQIZWhfMEOaZRibT8tY0kaCfPD8iYys5k/jGUciBTHDV2cIzIxP
+sWnQsBpM5mxRjhop9vAOGLPJrh0wn85epvsXQaTmZ/CuvF59nl3QkasxMIj0hon4cC/8ma17r1Ym
+YbMcZs3uZTbLXnHI5/xmjfkE/zHM12ib+dAGLBIK86LPIGsQKe51JSBSs88S91X+MlKZvw2Bdgty
+Pn5axx44O/NVLk84qqwGN2/ZB0XBJIvvQX5fD1hLw6bpGjBM24514zoWXLi3cVde1Dhk9GrFKUBh
+khcizek//bdz3X9EishZDuzxVsO0PvfQQ6S98Qapw77HjiVKYo2Ck9wHQvCPXrgs/ICWtHlMGgXL
+zKA7d2xmHGf1Lk84YvEdWlLpsWl1uOUfE/fbE6mekCFxw0mlHcD8lN3HmHy6sHah59U1p+pzoUE6
+pvTjBA2OvkzXGilyDRsfh/SDjAtMW/BD+VOCRaT1O61kQrJteYF1rk77aKrLfVrNCxZMriCEgeP1
+bUMgOWinX32/hgNZTitNpOCHM60+UozNS5XnsFbkOgIbZtv5K/SgFghIDybG5VxX3PqTyh/7x6Lj
+rUSKhROuJ2w4ZdVcEUQDP9zc5Qf4vTnFAVEp9Ad+Zq5lMQPfZk02IZvlOw4+grk3KumYWox1GJBM
+MxZn3QYEPycWDogYDovYS72Gpar7YdYGOfVzskUIgU3YKrWS/c14j2u0jlYEYwiIvxITH65h0fBB
+vXDVfsOHDBM78HQl1VpE0tRF9lofAraSNtr+7+FvBWEfPaljD5yxMIIJF+MVvfqYwhR7nxGYBN9o
+275rrd//zN/DEgDya8bBUghwwu9rNp1k/GezX3aXshLAfw5T/8kzOmHD7IzIarPAXzxk8jYhUn9O
+Cnm8LP8QKWaoqlU9J1E2z1KJEqS1aUM0bhxpiYlEJ2w+wmBgW4pNdXo6PN3HeH/hsZTmxMdobgtS
++Nly6eop9ZaZIvmcEaknewWx+raLJjbnxnXqX3XQLNkUW7QcNALb9o4sRMqaa8EyM1XACT6TOcCj
+MWsj9gkYJij/qTfbMrIbu2ARKYgwZo39VhRoUJgE638TTw06x9uRHtoMn1sHNovW7ZSgomLhs4bW
+CEGkKybgC6atNY79RIRn2i57Hyr8oHXar2QTbhwT6hH2r+1ki8NF66PAv26n1dyurdbJGRGrMEvW
+6xSvNNEwPpggebNOLGuZaI3AI3P9qAd1fMH9+mFsmlN/Nqww6ANwSOcAnW6DU9QzwALmSvNWGmdl
+o00jptsTC96tAbyH+fOO8dSSSTVxwwk2++5iItXfP/TrwFHXwTnovxEIZNT5C/tMzRHEIGXsBTaS
+agBnZOK6fuM2R9XuZA09jhp2TaCO/L+JhSoimUeH7aJGXeOt30MbhwAnc8Q1fMwteiUxbolKWz1h
+yiwGgjWsREbbYI43u2CCMU9JHaGNgH+ItH377En0vvuInnySqFIl0jp2JG3yZN08e9a7zCT+hPRb
+niwRjWpLtzeJPmb/iCvZtT+THnoVkbI2k+tfXhjLUYI2c58zIvUkIQNIzUbUHOyDuqxao1mDdPjd
+qpnqW2HM5J41ancSYRFhFqyHXuXVuHVhYfG5tumd4E/IlY/x4dcRwQzTNRYw/CkyTW3fEBEEBAFB
+IK8h4DuR/vCDPYk++KC+d7NOHdL69OFYfY7428Z+qmv2Dv1QAUoFDilSNAfXTKJP2XSGvLPGCh0+
+ogWcreZpbAkxn6DCZl1Hv6qvRFqcAyCsiRZYc3yCt1zAVDuC/X3Y8uD4gR8QJjmcI2rLdDSZkJ/X
+EHcTMmzclsF7VXE8nLFQ0I+Li2JNyl8iROovJKUcQUAQCAUEfCPSVPY/lSpFWosWpI0cSRTL0Yde
+nMKS20AgcMdOK7UcqXY/H8yNw7CxJQRkpghU7au0bAlRmuKELGYeX4gUARY4zcW65YX9pN9x0gB3
+BBHHNk12rDJTYxsExF0ixb3fsU/Ozj/L2i32lPorV60QqTujKfcIAoJAXkHANyK94jp6Ma8AgHbC
+F/PPt0CUFl+p4ZPEWZ0qgQLyzYJATed0qoPAp7M50ra9wuizL0Rat0OMaV/oWA5MGUt7D150C05k
+w9F9nEYQ1FTrkWzw79kdo5ZNrl2Qrp4IwoQHm78bd7HfpuFWo5zcJETqLXLynCAgCIQiAr4RaSj2
+yMs24TzPpz/gRATwlzqSpl3krOGvnERtOG2YM2nD4fEFCsHvClOrrl0iB2xOgo3s//Mi/IYgbRD1
+VKreMusePlflICDjmQ+mW8zCMMlO4KTzk62aZJGyYbZrTJIwIbsSmHj/WNTQwFEW+j2JFpgiUnPq
+j6vrQqTeIifPCQKCQCgiIERqGhVs80DE5hMlZuhkhu0n6sOZg/CTyQcaYul6EVlyoZoHt01vEKkl
+25DF9+oOkXbn1Gs2k6oeDbyUM7Z4ItiqYM10ZAkWGmWJsizCe/us/l0mRUTkZifYdmH11VoS4z/6
+9hTeguCbJUKI1JMRlXsFAUEg1BEQInUyQtjegPyo2CbRZWAyfcMh9b2HbeSk4vvcMrMiTRvC+VO3
+44ODvM+qMP2cBOH8Gzj4yfZchkpL54kgnywCqFAvykF5xjYClK9f4++5fXtyOL4LdaPtRll4DlsB
+fN1XCiL922vI5ISgJiNqF2Zyidr1ZKzlXkFAEAgNBIRIQ2McflOtQNal3z/H5mLe8lKgMPuf8Sk6
+j1r0dG4q/02BI50VBASBPIeAEGmeG7K832BslkcSc2wnwtFW+MyPOkSe7LXN+yhIDwQBQSC/ICBE
+ml9GUvohCAgCgoAgkCsICJHmCuxSqSAgCAgCgkB+QUCINL+MpPRDEBAEBAFBIFcQECLNFdilUkFA
+EBAEBIH8goAQaX4ZSemHICAICAKCQK4gIESaK7BLpYKAICAICAL5BQEh0vwyktIPQUAQEAQEgVxB
+QIg0V2CXSgUBQUAQEATyCwJCpPllJKUfgoAgIAgIArmCgBBprsAulQoCgoAgIAjkFwSESPPLSEo/
+BAFBQBAQBHIFASHSXIFdKhUEBAFBQBDILwgIkeaXkZR+CAKCgCAgCOQKAkKkuQK7VCoICAKCgCCQ
+XxAQIs0vIyn9EAQEAUFAEMgVBIRIcwV2qVQQEAQEAUEgvyAgRJpfRlL6IQgIAoKAIJArCAiR5grs
+UqkgIAgIAoJAfkFAiDS/jKT0QxAQBAQBQSBXEBAizRXYpVJBQBAQBASB/IKAEGl+GUnphyAgCAgC
+gkCuIPD/zBzOwR0GbqsAAAAASUVORK5CYII=
+
+--_004_AM8P195MB10593150165DD4EF4121AEF8DF1AAAM8P195MB1059EURP_--

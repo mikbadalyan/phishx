@@ -180,9 +180,9 @@
                                     </div>
                                     <div class="analysis-item-content">
                                         <div class="analysis-item-risk">
-                                            <div class="risk-score-display">{{ analysis.risk_score }}</div>
-                                            <div class="risk-badge {{ 'high' if analysis.risk_score > 0.7 else 'medium' if analysis.risk_score > 0.4 else 'low' }}">
-                                                {{ 'High Risk' if analysis.risk_score > 0.7 else 'Medium Risk' if analysis.risk_score > 0.4 else 'Low Risk' }}
+                                            <div class="risk-score-display">{{ analysis.risk_score }}%</div>
+                                            <div class="risk-badge {{ 'high' if analysis.risk_score > 70 else 'medium' if analysis.risk_score > 40 else 'low' }}">
+                                                {{ 'High Risk' if analysis.risk_score > 70 else 'Medium Risk' if analysis.risk_score > 40 else 'Low Risk' }}
                                             </div>
                                             <div class="classification-badge {{ 'badge-phishing' if analysis.classification == 'Phishing' else 'badge-safe' }}">
                                                 {{ analysis.classification }}
@@ -296,14 +296,14 @@
                                         <td>{{ analysis.filename }}</td>
                                         <td>
                                             <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                                {% if analysis.risk_score > 0.7 %}
+                                                {% if analysis.risk_score > 70 %}
                                                     <div style="width: 40px; height: 4px; background: #ef4444; border-radius: 2px;"></div>
-                                                {% elif analysis.risk_score > 0.4 %}
+                                                {% elif analysis.risk_score > 40 %}
                                                     <div style="width: 40px; height: 4px; background: #f59e0b; border-radius: 2px;"></div>
                                                 {% else %}
                                                     <div style="width: 40px; height: 4px; background: #10b981; border-radius: 2px;"></div>
                                                 {% endif %}
-                                                {{ analysis.risk_score }}
+                                                {{ analysis.risk_score }}%
                                             </div>
                                         </td>
                                         <td>
@@ -370,7 +370,7 @@
             // Show filter options
             const filterType = prompt('Enter filter type (user, classification):', 'classification');
             if (filterType) {
-                const filterValue = prompt(`Enter filter value for ${filterType} (e.g., Phishing, Safe):`, '');
+                const filterValue = prompt(`Enter filter value for ${filterType} (e.g., Phishing, Legitimate):`, '');
                 if (filterValue) {
                     // Get table rows in the analyses tab
                     const tableRows = document.querySelectorAll('#analyses-tab .admin-table tbody tr');

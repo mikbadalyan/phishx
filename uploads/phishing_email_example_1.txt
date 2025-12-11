@@ -1,0 +1,28 @@
+From: "Dropbox Notifications" <updates@dropbox-support.com>
+Subject: Shared folder update: Access required
+Date: Mon, 15 Dec 2025 11:38:07 +0400
+Message-ID: <df9234lkf23@dropbox-support.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+A colleague has updated the shared folder “Project Materials” and added
+new documents. To continue accessing the folder, please confirm your
+account permissions.
+
+You can review the update here:
+https://dropbox.com/team/shared-folder
+(If link doesn't work, use the secure alternative below)
+https://files-dropbox.com/access/confirm?id=485729
+
+This change is part of a recent workspace update. Confirmation takes
+less than a minute.
+
+If you believe you received this message in error, you can safely ignore it.
+
+Regards,
+Dropbox Team
+
+---
+This is an automated workspace notification.
+Please do not reply to this email.

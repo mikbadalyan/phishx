@@ -138,7 +138,7 @@
                     </div>
                     <div class="stat-card-value">
                         {% if analyses %}
-                            {{ "{:.1f}".format((analyses|selectattr('classification', 'equalto', 'Safe')|list|length / analyses|length * 100)) }}%
+                            {{ "{:.1f}".format((analyses|rejectattr('classification', 'equalto', 'Phishing')|list|length / analyses|length * 100)) }}%
                         {% else %}
                             0%
                         {% endif %}
@@ -158,9 +158,9 @@
                     </div>
                     <div class="stat-card-value">
                         {% if analyses %}
-                            {{ "{:.2f}".format(analyses|sum(attribute='risk_score') / analyses|length) }}
+                            {{ "{:.2f}%".format(analyses|sum(attribute='risk_score') / analyses|length) }}
                         {% else %}
-                            0.00
+                            0.00%
                         {% endif %}
                     </div>
                     <div class="stat-card-trend trend-down">
@@ -212,9 +212,9 @@
                                 </div>
                                 <div class="analysis-item-content">
                                     <div class="analysis-item-risk">
-                                        <div class="risk-score-display">{{ analysis.risk_score }}</div>
-                                        <div class="risk-badge {{ 'high' if analysis.risk_score > 0.7 else 'medium' if analysis.risk_score > 0.4 else 'low' }}">
-                                            {{ 'High Risk' if analysis.risk_score > 0.7 else 'Medium Risk' if analysis.risk_score > 0.4 else 'Low Risk' }}
+                                        <div class="risk-score-display">{{ analysis.risk_score }}%</div>
+                                        <div class="risk-badge {{ 'high' if analysis.risk_score > 70 else 'medium' if analysis.risk_score > 40 else 'low' }}">
+                                            {{ 'High Risk' if analysis.risk_score > 70 else 'Medium Risk' if analysis.risk_score > 40 else 'Low Risk' }}
                                         </div>
                                         <div class="classification-badge {{ 'badge-phishing' if analysis.classification == 'Phishing' else 'badge-safe' }}">
                                             {{ analysis.classification }}
@@ -403,7 +403,7 @@
         // Display analysis results
         function displayResults(data) {
             // Update result section content
-            document.getElementById('resultRiskScore').textContent = data.risk_score.toFixed(2);
+            document.getElementById('resultRiskScore').textContent = `${data.risk_score.toFixed(2)}%`;
             document.getElementById('resultClassification').textContent = data.classification;
             document.getElementById('resultFilename').textContent = data.filename;
             document.getElementById('resultDate').textContent = new Date().toLocaleString();
