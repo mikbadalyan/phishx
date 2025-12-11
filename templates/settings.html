@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - PhishGuard</title>
+    <title>Settings - PhishX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <a href="{{ url_for('dashboard') }}" class="sidebar-logo">
-                    <div class="sidebar-logo-icon">PG</div>
-                    <div class="sidebar-logo-text">PhishGuard</div>
+                    <div class="sidebar-logo-icon">PX</div>
+                    <div class="sidebar-logo-text">PhishX</div>
                 </a>
             </div>
             
@@ -136,7 +136,7 @@
                                 </select>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" onclick="saveGeneralSettings()">
                                 <i class="fas fa-save"></i> Save Changes
                             </button>
                         </form>
@@ -196,7 +196,7 @@
                                 </label>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem;">
+                            <button type="button" class="btn btn-primary" style="margin-top: 1.5rem;" onclick="saveNotificationSettings()">
                                 <i class="fas fa-save"></i> Save Changes
                             </button>
                         </form>
@@ -255,7 +255,7 @@
                                     <a href="{{ url_for('export_csv') }}" class="btn btn-outline" style="width: 100%; margin-bottom: 0.5rem;">
                                         <i class="fas fa-file-csv"></i> Export Analysis Data (CSV)
                                     </a>
-                                    <button class="btn btn-outline" style="width: 100%;">
+                                    <button class="btn btn-outline" style="width: 100%;" onclick="exportAllReportsPDF()">
                                         <i class="fas fa-file-pdf"></i> Export All Reports (PDF)
                                     </button>
                                 </div>
@@ -313,5 +313,32 @@
             transform: translateX(26px);
         }
     </style>
+    <script>
+        function exportAllReportsPDF() {
+            // In a real implementation, this would export all reports as PDF
+            alert('In a full implementation, this would export all analysis reports as a single PDF file.');
+        }
+        
+        function saveGeneralSettings() {
+            // Get form values
+            const language = document.getElementById('language').value;
+            const timezone = document.getElementById('timezone').value;
+            const theme = document.getElementById('theme').value;
+            
+            // In a real implementation, this would save to the database
+            alert(`General settings saved:\nLanguage: ${language}\nTimezone: ${timezone}\nTheme: ${theme}`);
+        }
+        
+        function saveNotificationSettings() {
+            // Get checkbox values
+            const emailNotifications = document.querySelector('input[type="checkbox"]').checked;
+            const phishingAlerts = document.querySelectorAll('input[type="checkbox"]')[1].checked;
+            const weeklyReports = document.querySelectorAll('input[type="checkbox"]')[2].checked;
+            const trainingReminders = document.querySelectorAll('input[type="checkbox"]')[3].checked;
+            
+            // In a real implementation, this would save to the database
+            alert("Notification settings saved:\\nEmail Notifications: " + (emailNotifications ? 'Enabled' : 'Disabled') + "\\nPhishing Alerts: " + (phishingAlerts ? 'Enabled' : 'Disabled') + "\\nWeekly Reports: " + (weeklyReports ? 'Enabled' : 'Disabled') + "\\nTraining Reminders: " + (trainingReminders ? 'Enabled' : 'Disabled'));
+        }
+    </script>
 </body>
 </html>

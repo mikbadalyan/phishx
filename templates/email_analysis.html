@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Analysis - PhishGuard</title>
+    <title>Email Analysis - PhishX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <a href="{{ url_for('dashboard') }}" class="sidebar-logo">
-                    <div class="sidebar-logo-icon">PG</div>
-                    <div class="sidebar-logo-text">PhishGuard</div>
+                    <div class="sidebar-logo-icon">PX</div>
+                    <div class="sidebar-logo-text">PhishX</div>
                 </a>
             </div>
             
@@ -196,10 +196,10 @@
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
                     <h3><i class="fas fa-history"></i> Analysis History</h3>
                     <div>
-                        <button class="btn btn-outline" style="margin-right: 0.5rem;">
+                        <button class="btn btn-outline" style="margin-right: 0.5rem;" onclick="applyFilter()">
                             <i class="fas fa-filter"></i> Filter
                         </button>
-                        <button class="btn btn-outline">
+                        <button class="btn btn-outline" onclick="applySort()">
                             <i class="fas fa-sort"></i> Sort
                         </button>
                     </div>
@@ -334,6 +334,46 @@
             }
         });
         
+        // Filter and sort functions
+        function applyFilter() {
+            // Show a prompt for filter criteria
+            const filterCriteria = prompt('Enter filter criteria (e.g., filename, phishing, safe):', '');
+            if (filterCriteria) {
+                // Get table rows
+                const tableRows = document.querySelectorAll('.admin-table tbody tr');
+                
+                // Filter rows based on criteria
+                tableRows.forEach(row => {
+                    let showRow = true;
+                    
+                    // Check if filter criteria matches filename or classification
+                    const filenameCell = row.cells[1]; // Filename column
+                    const classificationCell = row.cells[3]; // Classification column
+                    
+                    const filenameText = filenameCell.textContent.toLowerCase();
+                    const classificationText = classificationCell.textContent.toLowerCase();
+                    const criteria = filterCriteria.toLowerCase();
+                    
+                    if (criteria && !filenameText.includes(criteria) && !classificationText.includes(criteria)) {
+                        showRow = false;
+                    }
+                    
+                    // Show or hide row based on filters
+                    row.style.display = showRow ? '' : 'none';
+                });
+                
+                alert(`Filter applied with criteria: ${filterCriteria}`);
+            }
+        }
+        
+        function applySort() {
+            // Show sorting options
+            const sortOption = prompt('Enter sort option (date, risk_score, filename):', 'date');
+            if (sortOption) {
+                alert(`Sorted by: ${sortOption}\n\nIn a full implementation, this would sort the analysis history based on your selected option.`);
+            }
+        }
+        
         // Handle file selection
         function handleFileSelect() {
             if (!fileInput.files.length) return;
@@ -418,7 +458,9 @@
         // Download report functionality
         if (downloadReportBtn) {
             downloadReportBtn.addEventListener('click', () => {
-                alert('Report download functionality would be implemented here.');
+                // Since this is for the latest analysis, we would need to determine the latest analysis ID
+                // For now, we'll redirect to the CSV export which exports all analyses
+                window.location.href = '/export_csv';
             });
         }
     </script>

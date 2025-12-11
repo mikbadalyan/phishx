@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - PhishGuard</title>
+    <title>Profile - PhishX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <a href="{{ url_for('dashboard') }}" class="sidebar-logo">
-                    <div class="sidebar-logo-icon">PG</div>
-                    <div class="sidebar-logo-text">PhishGuard</div>
+                    <div class="sidebar-logo-icon">PX</div>
+                    <div class="sidebar-logo-text">PhishX</div>
                 </a>
             </div>
             
@@ -209,7 +209,7 @@
                                     <div style="flex: 1;">
                                         <p>Add an extra layer of security to your account by enabling two-factor authentication.</p>
                                     </div>
-                                    <button class="btn btn-outline">
+                                    <button class="btn btn-outline" onclick="enable2FA()">
                                         <i class="fas fa-shield-alt"></i> Enable 2FA
                                     </button>
                                 </div>
@@ -220,5 +220,10 @@
             </div>
         </div>
     </div>
+    <script>
+        function enable2FA() {
+            alert('In a full implementation, this would enable two-factor authentication for your account.');
+        }
+    </script>
 </body>
 </html>

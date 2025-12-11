@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports - PhishGuard</title>
+    <title>Reports - PhishX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <a href="{{ url_for('dashboard') }}" class="sidebar-logo">
-                    <div class="sidebar-logo-icon">PG</div>
-                    <div class="sidebar-logo-text">PhishGuard</div>
+                    <div class="sidebar-logo-icon">PX</div>
+                    <div class="sidebar-logo-text">PhishX</div>
                 </a>
             </div>
             
@@ -58,6 +58,12 @@
                         <span>Profile</span>
                     </a>
                 </li>
+                <li class="sidebar-nav-item">
+                    <a href="{{ url_for('settings') }}" class="sidebar-nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
                 {% if current_user.is_admin %}
                 <li class="sidebar-nav-item">
                     <a href="{{ url_for('admin') }}" class="sidebar-nav-link">
@@ -87,7 +93,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" onclick="exportReports()">
                         <i class="fas fa-download"></i> Export Report
                     </button>
                 </div>
@@ -126,7 +132,7 @@
                     </div>
                     
                     <div style="display: flex; align-items: flex-end;">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" onclick="applyFilters()">
                             <i class="fas fa-filter"></i> Apply Filters
                         </button>
                     </div>
@@ -288,9 +294,9 @@
                                                 <a href="{{ url_for('view_analysis', analysis_id=analysis.id) }}" class="action-btn" title="View Details">
                                                     <i class="fas fa-eye"></i>
                                                 </a>
-                                                <button class="action-btn" title="Download Report">
+                                                <a href="{{ url_for('export_report', analysis_id=analysis.id) }}" class="action-btn" title="Download Report">
                                                     <i class="fas fa-download"></i>
-                                                </button>
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -302,5 +308,61 @@
             </div>
         </div>
     </div>
+    <script>
+        function applyFilters() {
+            // Get filter values
+            const dateRange = document.getElementById('date-range').value;
+            const classification = document.getElementById('classification').value;
+            const riskLevel = document.getElementById('risk-level').value;
+            
+            // Get table rows
+            const tableRows = document.querySelectorAll('.admin-table tbody tr');
+            
+            // Filter rows based on criteria
+            tableRows.forEach(row => {
+                let showRow = true;
+                
+                // Classification filter
+                if (classification !== 'All') {
+                    const classificationCell = row.cells[3]; // Classification column
+                    const classificationText = classificationCell.textContent.trim();
+                    if (classificationText !== classification) {
+                        showRow = false;
+                    }
+                }
+                
+                // Risk level filter
+                if (riskLevel !== 'All') {
+                    const riskScoreCell = row.cells[2]; // Risk Score column
+                    const riskScoreText = riskScoreCell.textContent.trim();
+                    const riskScore = parseFloat(riskScoreText);
+                    
+                    if (riskLevel === 'High (> 0.7)' && riskScore <= 0.7) {
+                        showRow = false;
+                    } else if (riskLevel === 'Medium (0.4 - 0.7)' && (riskScore < 0.4 || riskScore > 0.7)) {
+                        showRow = false;
+                    } else if (riskLevel === 'Low (< 0.4)' && riskScore >= 0.4) {
+                        showRow = false;
+                    }
+                }
+                
+                // Show or hide row based on filters
+                row.style.display = showRow ? '' : 'none';
+            });
+            
+            // Show confirmation
+            alert(`Filters applied:\nClassification: ${classification}\nRisk Level: ${riskLevel}`);
+        }
+        
+        function downloadReport(analysisId) {
+            // In a real implementation, this would download the report
+            alert('In a full implementation, this would download the analysis report as PDF.');
+        }
+        
+        function exportReports() {
+            // Redirect to the CSV export endpoint which exports all user's analyses
+            window.location.href = '/export_csv';
+        }
+    </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analysis Detail - PhishGuard</title>
+    <title>Analysis Detail - PhishX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <a href="{{ url_for('dashboard') }}" class="sidebar-logo">
-                    <div class="sidebar-logo-icon">PG</div>
-                    <div class="sidebar-logo-text">PhishGuard</div>
+                    <div class="sidebar-logo-icon">PX</div>
+                    <div class="sidebar-logo-text">PhishX</div>
                 </a>
             </div>
             
@@ -58,6 +58,12 @@
                         <span>Profile</span>
                     </a>
                 </li>
+                <li class="sidebar-nav-item">
+                    <a href="{{ url_for('settings') }}" class="sidebar-nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
                 {% if current_user.is_admin %}
                 <li class="sidebar-nav-item">
                     <a href="{{ url_for('admin') }}" class="sidebar-nav-link">
@@ -89,7 +95,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-primary" id="downloadReportBtn">
+                    <button class="btn btn-primary" id="downloadReportBtn" onclick="downloadDetailReport()">
                         <i class="fas fa-download"></i> Download Report
                     </button>
                     <form method="POST" action="{{ url_for('delete_analysis', analysis_id=analysis.id) }}" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this analysis?');">
@@ -271,6 +277,11 @@
         document.getElementById('downloadReportBtn').addEventListener('click', function() {
             alert('PDF report generation would be implemented here.');
         });
+        
+        function downloadDetailReport() {
+            // Redirect to the PDF export endpoint for this specific analysis
+            window.location.href = '/export_report/{{ analysis.id }}';
+        }
     </script>
 </body>
 </html>
